@@ -46,7 +46,18 @@ function App() {
 
               {/* image of me  */}
               <div className="animation-of-me">
-                <img src="animations/ANIMATION_1.svg"></img>
+                <img
+                  className="my-avatar"
+                  src="animations/ANIMATION_1.svg"
+                ></img>
+
+                <div className="toolbox-row">
+                  <img src="/toolbox/Cursor.svg"></img>
+                  <img src="/toolbox/Code.svg"></img>
+                  <img src="/toolbox/Pencil.svg"></img>
+                  <img src="/toolbox/Star.svg"></img>
+                  <img src="/toolbox/Motion.svg"></img>
+                </div>
               </div>
             </div>
 

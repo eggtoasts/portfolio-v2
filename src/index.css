@@ -74,6 +74,23 @@ p {
 
 .animation-of-me {
   margin-left: auto;
+  position: relative;
+}
+
+.toolbox-row {
+  top: 90%;
+  left: 20%;
+  padding: 5.6px;
+  display: flex;
+  height: fit-content;
+  background-color: #242424;
+  position: absolute;
+  border-radius: 11.21px;
+}
+
+.toolbox-row img {
+  /* background-color:  */
+  width: 40px;
 }
 
 .no-break {
@@ -92,7 +109,7 @@ p {
   .info-column .my-description {
     font-size: 25px;
   }
-  .animation-of-me img {
+  .my-avatar {
     height: 250px;
   }
 
