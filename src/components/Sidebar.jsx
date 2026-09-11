@@ -1,6 +1,67 @@
-export default function Sidebar() {
-  //YIPEE
-  
+import "./Sidebar.css";
 
-  return <></>;
+export default function Sidebar({ currentPage, setCurrentPage }) {
+  //YIPEE
+
+  return (
+    <>
+      {/* sidebar here fer now... */}
+      <div className="sidebar">
+        {/* my name */}
+        <div className="name-row">
+          <img src="/sams_icon.svg" alt="Sam's logo" className="name-icon" />
+          <p className="main-font name">Sam Amaro</p>
+        </div>
+
+        {/* navigation goes here */}
+        <div className="explore">
+          <p className="sub-font">EXPLORE</p>
+
+          <div className="sidebar-nav main-font">
+            <button
+              onClick={() => setCurrentPage("Projects")}
+              className={`${currentPage == "Projects" ? "selected" : ""}`}
+            >
+              Projects
+            </button>
+            <button
+              onClick={() => setCurrentPage("About")}
+              className={`${currentPage == "About" ? "selected" : ""}`}
+            >
+              About
+            </button>
+            <button
+              onClick={() => setCurrentPage("Playground")}
+              className={`${currentPage == "Playground" ? "selected" : ""}`}
+            >
+              Playground
+            </button>
+            <button
+              onClick={() => setCurrentPage("Resume")}
+              className={`${currentPage == "Resume" ? "selected" : ""}`}
+            >
+              Resume
+            </button>
+          </div>
+        </div>
+
+        {/* links with my socials */}
+        <div className="bottom-socials">
+          <p className="sub-font">SOCIALS</p>
+
+          <div className="socials-row">
+            <div className="social">
+              <p className="sub-font">LINKEDIN</p>
+              <img src="/ix_arrow-diagonal-bottom-left.svg" alt="left arrow" />
+            </div>
+
+            <div className="social">
+              <p className="sub-font">GITHUB</p>
+              <img src="/ix_arrow-diagonal-bottom-left.svg" alt="left arrow" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
