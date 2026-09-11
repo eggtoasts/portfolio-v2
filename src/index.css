@@ -19,12 +19,17 @@
 
   --bold-poppins: 600;
   --normal-poppins: 400;
+
+  --caption-size: 14px;
 }
 
 body {
   margin: 0;
 }
 
+h2 {
+  font-weight: var(--normal-poppins);
+}
 p {
   margin: 0;
 }

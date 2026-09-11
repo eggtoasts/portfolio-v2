@@ -3,6 +3,8 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import ProjectPage from "./pages/ProjectPage";
 
+import AboutPage from "./pages/AboutPage";
+
 function Social() {}
 
 function App() {
@@ -18,9 +20,8 @@ function App() {
         <div className="main-content">
           {console.log("so our current page is --> " + currentPage)}
 
-          {/* workin on project page now... GULP! */}
-
-          <ProjectPage />
+          {currentPage == "Projects" && <ProjectPage />}
+          {currentPage == "About" && <AboutPage />}
         </div>
       </div>
     </>

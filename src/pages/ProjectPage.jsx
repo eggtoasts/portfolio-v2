@@ -19,7 +19,7 @@ export default function ProjectPage() {
     Motion: 4,
   };
   return (
-    <div className="projects">
+    <div className="page">
       {/* information about me */}
       <div className="hero-row">
         <div className="info-column">

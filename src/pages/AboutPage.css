@@ -1,0 +1,22 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.samRoblox {
+  width: 476px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-me-picture {
+  .sub-font {
+    font-size: var(--caption-size);
+    color: var(--text-gray);
+  }
+}
