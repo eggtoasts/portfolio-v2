@@ -1,0 +1,169 @@
+/* === project page teehee */
+
+.projects {
+  padding: 40px;
+}
+
+.hero-row {
+  display: flex;
+  padding-top: 20px;
+  /* border: 1px solid red; */
+  gap: 20px;
+}
+
+.hey-its-sam {
+  font-size: 50px;
+  line-height: 12px;
+}
+
+.info-column h2 {
+  font-weight: var(--normal-poppins);
+  font-size: 30px;
+}
+
+.animation-of-me {
+  margin-left: auto;
+  position: relative;
+}
+
+/* toolbox */
+
+.toolbox-row {
+  top: 90%;
+  left: 15%;
+  padding: 5.6px;
+  display: flex;
+  height: fit-content;
+  background-color: var(--sidebar-bg);
+  position: absolute;
+  border-radius: 11.21px;
+  gap: 6.16px;
+}
+
+.toolbox-row img {
+  /* background-color:  */
+  width: 40px;
+  position: relative;
+}
+
+.toolbox-blue-box {
+  transition: all 0.5s ease-in-out;
+
+  position: absolute;
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue);
+  border-radius: 3.92px;
+}
+
+/* === speech bubble === */
+.speech-bubble {
+  font-size: 12px;
+  position: absolute;
+  left: 30%;
+  top: -5%;
+  background-color: white;
+  border-radius: 6.76px;
+  padding: 8.79px 6px;
+  border: 1.5px solid #d9d9d9;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+.design-box {
+  vertical-align: middle;
+  height: 45px;
+}
+
+/* ==== projects ==== */
+.projects-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project1 {
+  aspect-ratio: 3 / 2; /* keeps the card proportional as it resizes */
+  background-color: red;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 16px;
+
+  .project-info-row {
+    margin-top: 10px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .type {
+    margin-left: auto;
+    color: var(--text-gray);
+  }
+
+  .description {
+    margin-top: 11px;
+    color: var(--text-gray);
+  }
+}
+
+.project-info-row {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1350px) {
+  .hey-its-sam {
+    font-size: 45px;
+  }
+  .info-column .my-description {
+    font-size: 25px;
+  }
+  .my-avatar {
+    height: 250px;
+  }
+
+  .design-box {
+    height: 39px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .projects {
+    padding: 40px 60px;
+  }
+  * {
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  * {
+    color: green;
+  }
+  .info-column .my-description {
+    font-size: 20px;
+  }
+  .design-box {
+    height: 35px;
+  }
+  .hero-row {
+    flex-wrap: wrap;
+  }
+  .animation-of-me {
+    margin-left: 0px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
