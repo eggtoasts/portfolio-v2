@@ -11,6 +11,21 @@
   gap: 20px;
 }
 
+.developer,
+.user-needs,
+.universal {
+  color: black;
+}
+
+.user-needs,
+.universal {
+  text-decoration: underline dotted;
+}
+
+.my-description {
+  color: var(--text-gray);
+}
+
 .hey-its-sam {
   font-size: 50px;
   line-height: 12px;

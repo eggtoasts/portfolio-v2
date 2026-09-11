@@ -27,11 +27,12 @@ export default function ProjectPage() {
           <h2 className="my-description main-font">
             <span className="no-break">
               {" "}
-              A developer who translates user needs into
+              A <span className="developer">developer</span> who translates{" "}
+              <span className="user-needs">user needs</span> into
             </span>{" "}
             <br></br>
             <span className="no-break">
-              universal{" "}
+              <span className="universal">universal</span>{" "}
               <img className="design-box" src="/Design Box.svg" alt="design" />
             </span>
           </h2>
@@ -103,34 +104,34 @@ export default function ProjectPage() {
         <div className="project-card">
           <div className="project1"></div>
           <div className="project-info-row">
-            <p className="title main-font"> Limbitless Solutions </p>
-            <p className="type sub-font"> INTERNSHIP </p>
+            <p className="title main-font"> EventKnight </p>
+            <p className="type sub-font"> PROJECT </p>
           </div>
 
           <p className="description text-font">
-            Designing and engineering Limbitless’ internal services.
+            A platform designed for discovering and managing campus events.
           </p>
         </div>
         <div className="project-card">
           <div className="project1"></div>
           <div className="project-info-row">
-            <p className="title main-font"> Limbitless Solutions </p>
-            <p className="type sub-font"> INTERNSHIP </p>
+            <p className="title main-font"> My Projects </p>
+            <p className="type sub-font"> LEARNING </p>
           </div>
 
           <p className="description text-font">
-            Designing and engineering Limbitless’ internal services.
+            Stuff I’ve built throughout my learning journey..
           </p>
         </div>
         <div className="project-card">
           <div className="project1"></div>
           <div className="project-info-row">
-            <p className="title main-font"> Limbitless Solutions </p>
-            <p className="type sub-font"> INTERNSHIP </p>
+            <p className="title main-font">My Portfolio</p>
+            <p className="type sub-font"> FIGMA & GITHUB </p>
           </div>
 
           <p className="description text-font">
-            Designing and engineering Limbitless’ internal services.
+            Containing all graphics and pages for this portfolio.
           </p>
         </div>
       </div>
