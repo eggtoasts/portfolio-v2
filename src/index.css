@@ -7,6 +7,8 @@
 
   --unselected-sidebar-text-color: #9f9fa3;
 
+  --sidebar-padding: 20px;
+
   --blue: #3b79ff;
 
   /* fonts + boldness */
@@ -38,11 +40,12 @@ p {
 
 .sidebar {
   min-height: 100vh;
-  padding: 20px;
+  padding: var(--sidebar-padding);
+  padding-block: 0px;
   display: flex;
 
   flex-direction: column;
-  max-width: 400px;
+  max-width: 292px;
   background-color: var(--sidebar-bg);
 
   /* === my name  ==== */
@@ -54,16 +57,18 @@ p {
   }
 
   .name-row {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     gap: 8px;
-    padding-bottom: 20px;
+    padding-bottom: var(--sidebar-padding);
   }
 }
 
+/* === navigation ===*/
 .explore {
   background-color: var(--explore-bg);
-  padding: 20px;
+  padding: var(--sidebar-padding);
   border-radius: 14px;
 }
 
@@ -79,8 +84,9 @@ p {
 
   /* The buttons inside of the navbar */
   button {
+    font-size: 16px;
     text-align: left;
-    padding: 10px 4.5px;
+    padding: 10px 10.5px;
     border-radius: 13px;
     border: 0px;
     color: var(--unselected-sidebar-text-color);
@@ -89,5 +95,26 @@ p {
 
   .selected {
     color: white;
+    background-color: var(--sidebar-bg);
   }
+}
+
+.bottom-socials {
+  margin-bottom: 20px;
+  margin-top: auto;
+  color: white;
+}
+
+.socials-row {
+  display: flex;
+  gap: 20px;
+
+  .social {
+    display: flex;
+    gap: 2px;
+  }
+}
+
+.bottom-socials > p:first-child {
+  margin-bottom: 20px;
 }

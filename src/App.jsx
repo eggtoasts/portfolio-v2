@@ -4,8 +4,11 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import "./App.css";
 
+function Social() {}
+
 function App() {
-  const [count, setCount] = useState(0);
+  // We'll have main, project1, project2
+  const [currentPage, setCurrentPage] = useState("Projects");
 
   return (
     <>
@@ -22,10 +25,31 @@ function App() {
           <p className="sub-font">EXPLORE</p>
 
           <div className="sidebar-nav main-font">
-            <button className="selected">Projects</button>
+            <button
+              className={`${currentPage == "Projects" ? "selected" : ""}`}
+            >
+              Projects
+            </button>
             <button>About</button>
             <button>Playground</button>
             <button>Resume</button>
+          </div>
+        </div>
+
+        {/* links with my socials */}
+        <div className="bottom-socials">
+          <p className="sub-font">SOCIALS</p>
+
+          <div className="socials-row">
+            <div className="social">
+              <p className="sub-font">LINKEDIN</p>
+              <img src="/ix_arrow-diagonal-bottom-left.svg" alt="left arrow" />
+            </div>
+
+            <div className="social">
+              <p className="sub-font">GITHUB</p>
+              <img src="/ix_arrow-diagonal-bottom-left.svg" alt="left arrow" />
+            </div>
           </div>
         </div>
       </div>
