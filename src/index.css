@@ -10,6 +10,7 @@
   --sidebar-padding: 20px;
 
   --blue: #3b79ff;
+  --text-gray: #757575;
 
   /* fonts + boldness */
   --sub-font: "Geist Mono";
@@ -37,6 +38,10 @@ p {
   font-family: var(--sub-font);
 }
 
+.text-font {
+  font-family: var(--text-font);
+}
+
 /* === entire page === */
 .app-layout {
   display: flex;
@@ -55,16 +60,14 @@ p {
 
 .hero-row {
   display: flex;
-
+  padding-top: 20px;
   /* border: 1px solid red; */
   gap: 20px;
 }
 
-.info-column {
-  /* border: 1px solid red; */
-}
 .hey-its-sam {
-  font-size: 40px;
+  font-size: 50px;
+  line-height: 12px;
 }
 
 .info-column h2 {
@@ -129,9 +132,52 @@ p {
   height: 45px;
 }
 
+/* ==== projects ==== */
+.projects-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project1 {
+  aspect-ratio: 3 / 2; /* keeps the card proportional as it resizes */
+  background-color: red;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 16px;
+
+  .project-info-row {
+    margin-top: 10px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .type {
+    margin-left: auto;
+    color: var(--text-gray);
+  }
+
+  .description {
+    margin-top: 11px;
+    color: var(--text-gray);
+  }
+}
+
+.project-info-row {
+  display: flex;
+  align-items: center;
+}
+
 @media only screen and (max-width: 1350px) {
   .hey-its-sam {
-    font-size: 30px;
+    font-size: 45px;
   }
   .info-column .my-description {
     font-size: 25px;
@@ -166,5 +212,9 @@ p {
   }
   .animation-of-me {
     margin-left: 0px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }

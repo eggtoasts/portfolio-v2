@@ -109,7 +109,51 @@ function App() {
             {/* projects below */}
 
             <div className="projects-grid">
-              <div className="project1"></div>
+              <div className="project-card">
+                <div className="project1"></div>
+                <div className="project-info-row">
+                  <p className="title main-font"> Limbitless Solutions </p>
+                  <p className="type sub-font"> INTERNSHIP </p>
+                </div>
+
+                <p className="description text-font">
+                  Designing and engineering Limbitless’ internal services.
+                </p>
+              </div>
+
+              <div className="project-card">
+                <div className="project1"></div>
+                <div className="project-info-row">
+                  <p className="title main-font"> Limbitless Solutions </p>
+                  <p className="type sub-font"> INTERNSHIP </p>
+                </div>
+
+                <p className="description text-font">
+                  Designing and engineering Limbitless’ internal services.
+                </p>
+              </div>
+              <div className="project-card">
+                <div className="project1"></div>
+                <div className="project-info-row">
+                  <p className="title main-font"> Limbitless Solutions </p>
+                  <p className="type sub-font"> INTERNSHIP </p>
+                </div>
+
+                <p className="description text-font">
+                  Designing and engineering Limbitless’ internal services.
+                </p>
+              </div>
+              <div className="project-card">
+                <div className="project1"></div>
+                <div className="project-info-row">
+                  <p className="title main-font"> Limbitless Solutions </p>
+                  <p className="type sub-font"> INTERNSHIP </p>
+                </div>
+
+                <p className="description text-font">
+                  Designing and engineering Limbitless’ internal services.
+                </p>
+              </div>
             </div>
           </div>
         </div>
