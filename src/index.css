@@ -77,20 +77,35 @@ p {
   position: relative;
 }
 
+/* toolbox */
+
 .toolbox-row {
   top: 90%;
   left: 20%;
   padding: 5.6px;
   display: flex;
   height: fit-content;
-  background-color: #242424;
+  background-color: var(--sidebar-bg);
   position: absolute;
   border-radius: 11.21px;
+  gap: 6.16px;
 }
 
 .toolbox-row img {
   /* background-color:  */
   width: 40px;
+  position: relative;
+}
+
+.toolbox-blue-box {
+  transition: all 0.5s ease-in-out;
+
+  position: absolute;
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue);
+  border-radius: 3.92px;
 }
 
 .no-break {
