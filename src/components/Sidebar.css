@@ -1,7 +1,10 @@
 /* === side bar ==== */
 
 .sidebar {
-  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+
   padding: var(--sidebar-padding);
   padding-block: 0px;
   display: flex;
