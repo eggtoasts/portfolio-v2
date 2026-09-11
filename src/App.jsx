@@ -12,7 +12,10 @@ function App() {
       {/* sidebar here fer now... */}
       <div className="sidebar">
         {/* my name */}
-        <p className="main-font name">Sam Amaro</p>
+        <div className="name-row">
+          <img src="/sams_icon.svg" alt="Sam's logo" className="name-icon" />
+          <p className="main-font name">Sam Amaro</p>
+        </div>
 
         {/* navigation goes here */}
         <div className="explore">

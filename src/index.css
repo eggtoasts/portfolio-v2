@@ -9,9 +9,12 @@
 
   --blue: #3b79ff;
 
+  /* fonts + boldness */
   --sub-font: "Geist Mono";
   --text-font: "Inter";
   --main-font: "Poppins";
+
+  --bold-poppins: 600;
 }
 
 body {
@@ -31,22 +34,31 @@ p {
   font-family: var(--sub-font);
 }
 
-/* === my name  ==== */
-
-.name {
-  color: white;
-  padding-bottom: 20px;
-}
-
 /* === side bar ==== */
 
 .sidebar {
+  min-height: 100vh;
   padding: 20px;
   display: flex;
 
   flex-direction: column;
   max-width: 400px;
   background-color: var(--sidebar-bg);
+
+  /* === my name  ==== */
+
+  .name {
+    color: white;
+    font-size: 20px;
+    font-weight: var(--bold-poppins);
+  }
+
+  .name-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 20px;
+  }
 }
 
 .explore {
