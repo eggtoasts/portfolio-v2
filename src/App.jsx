@@ -69,6 +69,12 @@ function App() {
                   src={`animations/ANIMATION_${positions[currentAnimation]}.svg`}
                 ></img>
 
+                {/* speechbubble */}
+                <p className="speech-bubble main-font">
+                  {speechText[positions[currentAnimation]]}
+                </p>
+
+                {/* toolbox */}
                 <div className="toolbox-row">
                   <div
                     className="toolbox-blue-box"
