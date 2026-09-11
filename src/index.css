@@ -36,6 +36,15 @@ p {
   font-family: var(--sub-font);
 }
 
+/* === entire page === */
+.app-layout {
+  display: flex;
+}
+
+/* === main page === */
+.main-content {
+}
+
 /* === side bar ==== */
 
 .sidebar {
@@ -45,6 +54,8 @@ p {
   display: flex;
 
   flex-direction: column;
+  width: 292px;
+  flex-shrink: 0;
   max-width: 292px;
   background-color: var(--sidebar-bg);
 
