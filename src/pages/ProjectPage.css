@@ -136,6 +136,29 @@
   align-items: center;
 }
 
+@media only screen and (min-width: 1600px) {
+  .hey-its-sam {
+    font-size: 3.5rem;
+  }
+  .info-column .my-description {
+    font-size: 2.5rem;
+  }
+  .my-avatar {
+    height: 300px;
+  }
+
+  .design-box {
+    height: 59px;
+  }
+
+  .page {
+    padding: 40px 90px;
+  }
+  * {
+    color: pink;
+  }
+}
+
 @media only screen and (max-width: 1350px) {
   .hey-its-sam {
     font-size: 45px;

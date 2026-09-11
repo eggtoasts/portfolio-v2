@@ -29,25 +29,27 @@ export default function Sidebar({ currentPage, setCurrentPage }) {
               className={`${currentPage == "About" ? "selected" : ""}`}
             >
               About
-              <div className="about-section">
-                <div className="about-titles">
-                  <div className="line"></div>
-                  <button>Hi!</button>
-                </div>
+              {currentPage == "About" && (
+                <div className="about-section">
+                  <div className="about-titles">
+                    <div className="line"></div>
+                    <button>Hi!</button>
+                  </div>
 
-                <div className="about-titles">
-                  <div className="line"></div>
-                  <button>Experience</button>
+                  <div className="about-titles">
+                    <div className="line"></div>
+                    <button>Experience</button>
+                  </div>
+                  <div className="about-titles">
+                    <div className="line"></div>
+                    <button>Community</button>
+                  </div>
+                  <div className="about-titles">
+                    <div className="line"></div>
+                    <button>Gallery</button>
+                  </div>
                 </div>
-                <div className="about-titles">
-                  <div className="line"></div>
-                  <button>Community</button>
-                </div>
-                <div className="about-titles">
-                  <div className="line"></div>
-                  <button>Gallery</button>
-                </div>
-              </div>
+              )}
             </button>
 
             {/* Only appears if about is selected! */}

@@ -1,6 +1,5 @@
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 20px;
 }
 
@@ -15,8 +14,27 @@
 }
 
 .about-me-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .sub-font {
     font-size: var(--caption-size);
     color: var(--text-gray);
+  }
+}
+
+.about-socials {
+  margin-top: 31px;
+  display: flex;
+  gap: 14px;
+
+  img {
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-text {
+    width: 500px;
   }
 }

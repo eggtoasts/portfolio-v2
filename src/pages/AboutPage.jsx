@@ -28,6 +28,12 @@ export default function AboutPage() {
                 experimenting, and trying to make things a little better.
               </p>
             </div>
+
+            <div className="about-socials">
+              <img src="/about-me-icons/github.svg"></img>
+              <img src="/about-me-icons/linkedin.svg"></img>
+              <img src="/about-me-icons/email.svg"></img>
+            </div>
           </div>
 
           {/* image of me with a caption */}
