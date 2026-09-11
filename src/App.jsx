@@ -22,17 +22,38 @@ function App() {
             {/* information about me */}
             <div className="hero-row">
               <div className="info-column">
-                <h1 className="main-font">Hello! I'm Sam,</h1>
-                <h2 className="main-font">
-                  A developer who translates user needs into universal design
+                <h1 className="hey-its-sam main-font">Hello! I'm Sam,</h1>
+                <h2 className="my-description main-font">
+                  <span className="no-break">
+                    {" "}
+                    A developer who translates user needs into
+                  </span>{" "}
+                  <br></br>
+                  <span className="no-break">
+                    universal{" "}
+                    <img
+                      className="design-box"
+                      src="/Design Box.svg"
+                      alt="design"
+                    />
+                  </span>
                 </h2>
 
-                <p>Ex-Product Designer & SWE Intern at Limbitless Solutions</p>
+                <p className="main-font">
+                  Ex-Product Designer & SWE Intern at Limbitless Solutions
+                </p>
               </div>
 
               {/* image of me  */}
+              <div className="animation-of-me">
+                <img src="animations/ANIMATION_1.svg"></img>
+              </div>
+            </div>
 
-              <img src="animations/ANIMATION_1.svg"></img>
+            {/* projects below */}
+
+            <div className="projects-grid">
+              <div className="project1"></div>
             </div>
           </div>
         </div>

@@ -17,6 +17,7 @@
   --main-font: "Poppins";
 
   --bold-poppins: 600;
+  --normal-poppins: 400;
 }
 
 body {
@@ -43,10 +44,83 @@ p {
 
 /* === main page === */
 .main-content {
+  width: 100%;
 }
 
 /* === project page teehee */
 
 .projects {
   padding: 40px;
+}
+
+.hero-row {
+  display: flex;
+
+  border: 1px solid red;
+  gap: 20px;
+}
+
+.info-column {
+  border: 1px solid red;
+}
+.hey-its-sam {
+  font-size: 40px;
+}
+
+.info-column h2 {
+  font-weight: var(--normal-poppins);
+  font-size: 30px;
+}
+
+.animation-of-me {
+  margin-left: auto;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+.design-box {
+  vertical-align: middle;
+  height: 45px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .hey-its-sam {
+    font-size: 30px;
+  }
+  .info-column .my-description {
+    font-size: 25px;
+  }
+  .animation-of-me img {
+    height: 250px;
+  }
+
+  .design-box {
+    height: 39px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  * {
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  * {
+    color: green;
+  }
+  .info-column .my-description {
+    font-size: 20px;
+  }
+  .design-box {
+    height: 35px;
+  }
+  .hero-row {
+    flex-wrap: wrap;
+  }
+  .animation-of-me {
+    margin-left: 0px;
+  }
 }
