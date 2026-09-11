@@ -86,6 +86,29 @@
   margin-bottom: 20px;
 }
 
+/* === ABOUT ME ==== */
+
+.about-section {
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sidebar-bg);
+  border-radius: 14px;
+
+  padding-left: 10px;
+
+  .about-titles {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.line {
+  height: 39px;
+  width: 1px;
+  background-color: var(--unselected-sidebar-text-color);
+}
+
 /* == tablet == */
 
 @media only screen and (max-width: 1200px) {
