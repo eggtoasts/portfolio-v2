@@ -54,6 +54,37 @@ export default function AboutPage() {
 
         <h2 className="main-font">Experience</h2>
 
+        <div className="experiences-container">
+          <div className="experience-card">
+            <img
+              className="experience-icon"
+              src="/LimbitlessExperience.svg"
+            ></img>
+
+            <div className="experience-info">
+              <div className="title-date-row">
+                <p className="title">
+                  Software Engineer & Product Designer Intern
+                </p>
+                <p className="date">May 2026 - Aug 2026</p>
+              </div>
+
+              <p className="location">Limbitless Solutions - Orlando, FL</p>
+
+              <p className="description">
+                Designing the company's internal services, as well as developing
+                the UI.
+              </p>
+
+              <div className="experience-pictures">
+                <img src=""></img>
+                <img src=""></img>
+                <img src=""></img>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <h2 className="main-font">Community</h2>
 
         <h2 className="main-font">Gallery</h2>

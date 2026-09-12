@@ -33,6 +33,50 @@
   }
 }
 
+/* ==== experience ==== */
+
+.experiences-container {
+  font-family: var(--text-font);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.experience-icon {
+  height: 46px;
+}
+
+.experience-card {
+  display: flex;
+
+  gap: 21px;
+
+  .date,
+  .location,
+  .description {
+    color: var(--text-gray);
+  }
+}
+
+.experience-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title-date-row {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.experience-pictures {
+  display: flex;
+
+  img {
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .about-text {
     width: 500px;
