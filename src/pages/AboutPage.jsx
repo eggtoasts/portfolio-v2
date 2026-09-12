@@ -69,7 +69,7 @@ export default function AboutPage() {
                 <p className="date">May 2026 - Aug 2026</p>
               </div>
 
-              <p className="location">Limbitless Solutions - Orlando, FL</p>
+              <p className="location">Limbitless Solutions | Orlando, FL</p>
 
               <p className="description">
                 Designing the company's internal services, as well as developing

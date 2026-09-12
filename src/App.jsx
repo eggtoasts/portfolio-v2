@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import ProjectPage from "./pages/ProjectPage";
+import LimbitlessPage from "./pages/LimbitlessPage";
 
 import AboutPage from "./pages/AboutPage";
 
@@ -9,7 +10,7 @@ function Social() {}
 
 function App() {
   // We'll have main, project1, project2
-  const [currentPage, setCurrentPage] = useState("Projects");
+  const [currentPage, setCurrentPage] = useState("Limbitless");
 
   return (
     <>
@@ -22,6 +23,8 @@ function App() {
 
           {currentPage == "Projects" && <ProjectPage />}
           {currentPage == "About" && <AboutPage />}
+
+          {currentPage == "Limbitless" && <LimbitlessPage />}
         </div>
       </div>
     </>

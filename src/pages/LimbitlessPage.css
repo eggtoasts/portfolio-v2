@@ -1,0 +1,15 @@
+.info-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-block {
+  border-left: 2.5px solid var(--blue);
+  margin-top: 19px;
+  padding-left: 10px;
+}
