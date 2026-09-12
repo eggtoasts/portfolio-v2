@@ -51,3 +51,48 @@
     font-family: var(--text-font);
   }
 }
+
+/* Projects for Limbitless */
+.project-container {
+  margin-top: 74px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.project-block {
+  display: flex;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+
+  .project-subheader,
+  .description {
+    color: var(--text-gray);
+  }
+
+  .project-subheader {
+    font-family: var(--sub-font);
+  }
+
+  .title {
+    margin: 0px;
+
+    font-size: 36px;
+    font-family: var(--main-font);
+  }
+
+  .description {
+    font-family: var(--text-font);
+  }
+}
+.project-photo {
+  margin-left: auto;
+
+  background-color: var(--text-gray);
+
+  width: 428px;
+  height: 239px;
+}

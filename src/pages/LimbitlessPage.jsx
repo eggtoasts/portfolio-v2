@@ -65,6 +65,23 @@ export default function LimbitlessPage() {
             </p>
           </div>
         </div>
+
+        {/* projects i've worked on */}
+
+        <div className="project-container">
+          <div className="project-block">
+            <div className="project-info">
+              <p className="project-subheader">PROJECT 01</p>
+
+              <p className="title">WCAG Compliance</p>
+              <p className="description">
+                Making the main website more accessible, and fixing visual bugs.
+              </p>
+            </div>
+
+            <img className="project-photo"></img>
+          </div>
+        </div>
       </div>
     </>
   );
