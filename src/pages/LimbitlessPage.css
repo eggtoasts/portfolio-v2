@@ -88,6 +88,17 @@
   display: flex;
   flex-direction: column;
 
+  .project-subheader-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .project-arrow {
+    width: 16px;
+    height: auto;
+  }
+
   .project-subheader,
   .description {
     color: var(--text-gray);

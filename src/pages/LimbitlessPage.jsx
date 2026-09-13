@@ -80,7 +80,14 @@ export default function LimbitlessPage() {
         <div className="project-container">
           <div className="project-block">
             <div className="project-info">
-              <p className="project-subheader">PROJECT 01</p>
+              <div className="project-subheader-row">
+                <img
+                  className="project-arrow"
+                  src="/sams_icon.svg"
+                  alt="toggle"
+                />
+                <p className="project-subheader">PROJECT 01</p>
+              </div>
 
               <p className="title">WCAG Compliance</p>
               <p className="description">
