@@ -1,3 +1,12 @@
+/* project banner! */
+
+.project-banner {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* rest of internship info*/
+
 .info-row {
   display: flex;
   justify-content: space-between;

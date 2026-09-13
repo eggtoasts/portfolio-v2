@@ -2,6 +2,12 @@ import "./LimbitlessPage.css";
 export default function LimbitlessPage() {
   return (
     <>
+      {/* banner! */}
+      <img
+        className="project-banner"
+        src="/project-banners/limbitless_banner.png"
+      ></img>
+
       <div className="page">
         <p className="sub-font">INTERNSHIP</p>
         <h1 className="main-font">Limbitless Solutions</h1>
@@ -81,6 +87,8 @@ export default function LimbitlessPage() {
 
             <img className="project-photo"></img>
           </div>
+
+          {/* Below this block should only show when user presses the arrow!! */}
         </div>
       </div>
     </>
