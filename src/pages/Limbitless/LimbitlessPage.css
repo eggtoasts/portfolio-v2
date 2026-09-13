@@ -89,6 +89,8 @@
   margin-top: 6px;
 
   margin-bottom: auto;
+
+  transform: rotate(0deg);
 }
 
 .project-info {
@@ -134,8 +136,21 @@
 /* toggeable project information */
 
 .project-toggle {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 1s ease,
+    opacity 0.5s ease;
+
   padding-left: 36px;
   margin-top: 26px;
+
+  .project-toggle-inner {
+    overflow: hidden;
+    padding-left: 36px;
+    margin-top: 26px;
+  }
 
   .info-col > p {
     color: var(--text-gray);
@@ -145,5 +160,34 @@
     /* border-left: 0px;
   padding-left: 0px; */
     border-left: 2.5px solid var(--text-gray);
+  }
+}
+
+/* animation */
+.project-toggle.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.project-arrow {
+  transition: transform 1s ease-in-out;
+}
+.project-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* images of project */
+
+.project-images {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  img {
+    flex: 1;
+    min-width: 0;
+
+    height: 300px;
+
+    object-fit: contain;
   }
 }

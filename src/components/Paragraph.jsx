@@ -5,6 +5,7 @@ export default function Paragraph({
   arr,
   color,
   coloredText,
+  images,
 }) {
   // only color the 'colored' text if exists
   const parts = coloredText ? header.split(coloredText) : [header];
@@ -32,6 +33,14 @@ export default function Paragraph({
             <p key={i}>{a}</p>
           ))}
         </div>
+
+        {images && (
+          <div className="project-images">
+            {images.map((src, i) => (
+              <img key={i} src={src} alt="" />
+            ))}
+          </div>
+        )}
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 import InfoRow from "../../components/InfoRow";
 import Paragraph from "../../components/Paragraph";
 import "./LimbitlessPage.css";
+import { useState } from "react";
 
 export default function LimbitlessPage() {
   const header1 = `Empowering children with limb
@@ -51,26 +52,65 @@ export default function LimbitlessPage() {
         {/* projects i've worked on */}
 
         <div className="project-container">
-          <div className="project-block">
-            <img className="project-arrow" src="/arrow.svg" alt="toggle" />
-            <div className="project-info">
-              <div className="project-subheader-row">
-                <p className="project-subheader">PROJECT 01</p>
+          {/* project 1 */}
+          <div className="project-item">
+            <div className="project-block">
+              <img className="project-arrow" src="/arrow.svg" alt="toggle" />
+              <div className="project-info">
+                <div className="project-subheader-row">
+                  <p className="project-subheader">PROJECT 01</p>
+                </div>
+
+                <p className="title">WCAG Compliance</p>
+                <p className="description">
+                  Making the main website more accessible, and fixing visual
+                  bugs.
+                </p>
               </div>
 
-              <p className="title">WCAG Compliance</p>
-              <p className="description">
-                Making the main website more accessible, and fixing visual bugs.
-              </p>
+              <img className="project-photo"></img>
             </div>
 
-            <img className="project-photo"></img>
+            {/* Below this block should only show when user presses the arrow!! */}
+
+            <div className="project-toggle">
+              {/* project info */}
+              <InfoRow
+                columns={[
+                  { label: "TEAM", values: ["Web Development & Design"] },
+                  { label: "WORKED W/", values: ["Sabrina N."] },
+                  { label: "TOOLS", values: ["HTML/CSS/JS"] },
+                  { label: "TIMELINE", values: ["Jan 2026 - Current"] },
+                ]}
+              />
+
+              {/* text */}
+
+              <Paragraph
+                subheader={"TASK"}
+                header={""}
+                arr={["example1"]}
+                color={""}
+                coloredText={""}
+                images={["LifeIsRoblox.png", "LifeIsRoblox.png"]}
+              />
+
+              <Paragraph
+                subheader={"WHAT I LEARNED"}
+                header={""}
+                arr={["example1"]}
+                color={""}
+                coloredText={""}
+              />
+            </div>
           </div>
 
-          {/* Below this block should only show when user presses the arrow!! */}
-
-          <div className="project-toggle">
-            {/* project info */}
+          {/* project 1 */}
+          <ProjectItem
+            number="PROJECT 01"
+            title="WCAG Compliance"
+            description="Making the main website more accessible, and fixing visual bugs."
+          >
             <InfoRow
               columns={[
                 { label: "TEAM", values: ["Web Development & Design"] },
@@ -79,19 +119,52 @@ export default function LimbitlessPage() {
                 { label: "TIMELINE", values: ["Jan 2026 - Current"] },
               ]}
             />
-
-            {/* text */}
-
             <Paragraph
-              subheader={"TASK"}
-              header={""}
+              subheader="TASK"
+              header=""
               arr={["example1"]}
-              color={""}
-              coloredText={""}
+              images={["LifeIsRoblox.png", "LifeIsRoblox.png"]}
             />
-          </div>
+            <Paragraph
+              subheader="WHAT I LEARNED"
+              header=""
+              arr={["example1"]}
+            />
+          </ProjectItem>
         </div>
       </div>
     </>
+  );
+}
+
+function ProjectItem({ number, title, description, children }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="project-item">
+      {/* this info will always show */}
+      <div className="project-block">
+        <img
+          className={`project-arrow ${isOpen ? "open" : ""}`}
+          src="/arrow.svg"
+          alt="toggle"
+          onClick={() => setIsOpen(!isOpen)}
+        />
+        <div className="project-info">
+          <div className="project-subheader-row">
+            <p className="project-subheader">{number}</p>
+          </div>
+          <p className="title">{title}</p>
+          <p className="description">{description}</p>
+        </div>
+
+        <img className="project-photo"></img>
+      </div>
+
+      {/* toggleable content */}
+      <div className={`project-toggle ${isOpen ? "open" : ""}`}>
+        <div className="project-toggle-inner">{children}</div>
+      </div>
+    </div>
   );
 }
