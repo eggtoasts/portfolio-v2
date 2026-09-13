@@ -17,36 +17,36 @@ export default function Sidebar({ currentPage, setCurrentPage }) {
         <div className="explore">
           <p className="sub-font">EXPLORE</p>
 
-          <div className="sidebar-nav main-font">
+          <div className="sidebar-nav">
             <button
               onClick={() => setCurrentPage("Projects")}
-              className={`${currentPage == "Projects" ? "selected" : ""}`}
+              className={`text-font ${currentPage == "Projects" ? "selected" : ""}`}
             >
               Projects
             </button>
             <button
               onClick={() => setCurrentPage("About")}
-              className={`${currentPage == "About" ? "selected" : ""}`}
+              className={`text-font ${currentPage == "About" ? "selected" : ""}`}
             >
               About
               {currentPage == "About" && (
                 <div className="about-section">
                   <div className="about-titles">
                     <div className="line"></div>
-                    <button>Hi!</button>
+                    <button className="text-font">Hi!</button>
                   </div>
 
                   <div className="about-titles">
                     <div className="line"></div>
-                    <button>Experience</button>
+                    <button className="text-font">Experience</button>
                   </div>
                   <div className="about-titles">
                     <div className="line"></div>
-                    <button>Community</button>
+                    <button className="text-font">Community</button>
                   </div>
                   <div className="about-titles">
                     <div className="line"></div>
-                    <button>Gallery</button>
+                    <button className="text-font">Gallery</button>
                   </div>
                 </div>
               )}
@@ -56,13 +56,13 @@ export default function Sidebar({ currentPage, setCurrentPage }) {
 
             <button
               onClick={() => setCurrentPage("Playground")}
-              className={`${currentPage == "Playground" ? "selected" : ""}`}
+              className={`text-font ${currentPage == "Playground" ? "selected" : ""}`}
             >
               Playground
             </button>
             <button
               onClick={() => setCurrentPage("Resume")}
-              className={`${currentPage == "Resume" ? "selected" : ""}`}
+              className={`text-font ${currentPage == "Resume" ? "selected" : ""}`}
             >
               Resume
             </button>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./ProjectPage.css";
-export default function ProjectPage() {
+export default function ProjectPage({ setCurrentPage }) {
   const [currentAnimation, setCurrentAnimation] = useState("Cursor");
 
   const speechText = [
@@ -89,7 +89,10 @@ export default function ProjectPage() {
       {/* projects below */}
 
       <div className="projects-grid">
-        <div className="project-card">
+        <div
+          className="project-card"
+          onClick={() => setCurrentPage("Limbitless")}
+        >
           <div className="project1"></div>
           <div className="project-info-row">
             <p className="title main-font"> Limbitless Solutions </p>
@@ -101,7 +104,10 @@ export default function ProjectPage() {
           </p>
         </div>
 
-        <div className="project-card">
+        <div
+          className="project-card"
+          onClick={() => setCurrentPage("EventKnight")}
+        >
           <div className="project1"></div>
           <div className="project-info-row">
             <p className="title main-font"> EventKnight </p>
