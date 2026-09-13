@@ -36,6 +36,7 @@
 }
 
 .paragraph {
+  margin-bottom: 79px;
   display: flex;
   flex-direction: column;
 
@@ -62,10 +63,10 @@
   }
 
   .text-block {
-    margin-top: 13px;
     font-family: var(--text-font);
 
     p {
+      margin-top: 13px;
       line-height: var(--text-line-height);
     }
   }

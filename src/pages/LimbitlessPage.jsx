@@ -1,5 +1,12 @@
 import "./LimbitlessPage.css";
 export default function LimbitlessPage() {
+  const header1 = `Empowering children with limb
+            differences through expressive and affordable 3D-printed bionic
+            arms.`;
+
+  const arr = [
+    "Limbitless Solutions was my first ever tech internship, and the place where I learned to be a designer and an engineer at the same time. I started on the web team, coding designs and learning Figma along the way, before moving over to the CS side.",
+  ];
   return (
     <>
       {/* banner! */}
@@ -52,25 +59,21 @@ export default function LimbitlessPage() {
 
         {/* mission */}
 
-        <div className="paragraph">
-          <div className="title-block">
-            <p className="sub-header">THE MISSION</p>
-            <h2 className="header">
-              <span className="blue">Empowering</span> children with limb
-              differences through expressive and affordable 3D-printed bionic
-              arms.
-            </h2>
-          </div>
+        <Paragraph
+          subheader={"THE MISSION"}
+          header={header1}
+          arr={arr}
+          color={"blue"}
+          coloredText={"Empowering"}
+        />
 
-          <div className="text-block">
-            <p>
-              Limbitless Solutions was my first ever tech internship, and the
-              place where I learned to be a designer and an engineer at the same
-              time. I started on the web team, coding designs and learning Figma
-              along the way, before moving over to the CS side.
-            </p>
-          </div>
-        </div>
+        <Paragraph
+          subheader={"TEST"}
+          header={"woahhh"}
+          arr={arr}
+          color={""}
+          coloredText={""}
+        />
 
         {/* projects i've worked on */}
 
@@ -89,6 +92,39 @@ export default function LimbitlessPage() {
           </div>
 
           {/* Below this block should only show when user presses the arrow!! */}
+        </div>
+      </div>
+    </>
+  );
+}
+
+// component for paragraphs
+function Paragraph({ subheader, header, arr, color, coloredText }) {
+  // only color the 'colored' text if exists
+  const parts = coloredText ? header.split(coloredText) : [header];
+
+  return (
+    <>
+      <div className="paragraph">
+        <div className="title-block">
+          <p className="sub-header">{subheader}</p>
+          <h2 className="header">
+            {coloredText ? (
+              <>
+                {parts[0]}
+                <span className={color}>{coloredText}</span>
+                {parts[1]}
+              </>
+            ) : (
+              header
+            )}
+          </h2>
+        </div>
+
+        <div className="text-block">
+          {arr.map((a, i) => (
+            <p key={i}>{a}</p>
+          ))}
         </div>
       </div>
     </>
