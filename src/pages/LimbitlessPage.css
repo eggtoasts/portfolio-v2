@@ -27,6 +27,7 @@
 .info-block {
   border-left: 2.5px solid var(--blue);
   margin-top: 19px;
+  line-height: 24px;
   padding-left: 10px;
 }
 

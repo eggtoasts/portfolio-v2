@@ -11,7 +11,7 @@ function Social() {}
 
 function App() {
   // We'll have main, project1, project2
-  const [currentPage, setCurrentPage] = useState("EventKnight");
+  const [currentPage, setCurrentPage] = useState("Limbitless");
 
   return (
     <>
@@ -24,6 +24,7 @@ function App() {
 
           {currentPage == "Projects" && <ProjectPage />}
           {currentPage == "About" && <AboutPage />}
+          {currentPage == "Limbitless" && <LimbitlessPage />}
 
           {currentPage == "EventKnight" && <EventKnightPage />}
         </div>

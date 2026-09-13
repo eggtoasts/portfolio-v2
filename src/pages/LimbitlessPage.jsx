@@ -1,3 +1,4 @@
+import InfoRow from "../components/InfoRow";
 import "./LimbitlessPage.css";
 export default function LimbitlessPage() {
   const header1 = `Empowering children with limb
@@ -19,43 +20,21 @@ export default function LimbitlessPage() {
         <p className="sub-font">INTERNSHIP</p>
         <h1 className="main-font main-title">Limbitless Solutions</h1>
 
-        {/* info abt limb, should  make it into a component  in the future for other pages*/}
-        <div className="info-row">
-          <p className="info-col sub-font">
-            <p>ROLE</p>
-
-            <div className="info-block text-font">
-              <p>Product Designer</p>
-              <p>Software Engineer Intern</p>
-            </div>
-          </p>
-
-          <p className="info-col sub-font">
-            <p>ORG</p>
-
-            <div className="info-block">
-              <p>Health</p>
-              <p>Technology</p>
-            </div>
-          </p>
-
-          <p className="info-col sub-font">
-            <p>TEAMS</p>
-
-            <div className="info-block text-font">
-              <p>Web Development & Design</p>
-              <p>Computer Science</p>
-            </div>
-          </p>
-
-          <p className="info-col sub-font">
-            <p>TIMELINE</p>
-
-            <div className="info-block text-font">
-              <p>Jan 2026 - Current</p>
-            </div>
-          </p>
-        </div>
+        {/* info abt limb*/}
+        <InfoRow
+          columns={[
+            {
+              label: "ROLE",
+              values: ["Product Designer", "Software Engineer Intern"],
+            },
+            { label: "ORG", values: ["Health", "Technology"] },
+            {
+              label: "TEAMS",
+              values: ["Web Development & Design", "Computer Science"],
+            },
+            { label: "TIMELINE", values: ["Jan 2026 - Current"] },
+          ]}
+        />
 
         {/* mission */}
 
@@ -98,39 +77,14 @@ export default function LimbitlessPage() {
 
           <div className="project-toggle">
             {/* project info */}
-            <div className="info-row">
-              <p className="info-col sub-font">
-                <p>TEAM</p>
-
-                <div className="info-block text-font">
-                  <p>Web Development & Design</p>
-                </div>
-              </p>
-
-              <p className="info-col sub-font">
-                <p>WORKED W/</p>
-
-                <div className="info-block">
-                  <p>Sabrina N.</p>
-                </div>
-              </p>
-
-              <p className="info-col sub-font">
-                <p>TOOLS</p>
-
-                <div className="info-block">
-                  <p>HTML/CSS/JS</p>
-                </div>
-              </p>
-
-              <p className="info-col sub-font">
-                <p>TIMELINE</p>
-
-                <div className="info-block text-font">
-                  <p>Jan 2026 - Current</p>
-                </div>
-              </p>
-            </div>
+            <InfoRow
+              columns={[
+                { label: "TEAM", values: ["Web Development & Design"] },
+                { label: "WORKED W/", values: ["Sabrina N."] },
+                { label: "TOOLS", values: ["HTML/CSS/JS"] },
+                { label: "TIMELINE", values: ["Jan 2026 - Current"] },
+              ]}
+            />
 
             {/* text */}
 
