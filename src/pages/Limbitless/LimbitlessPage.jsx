@@ -1,5 +1,6 @@
-import InfoRow from "../components/InfoRow";
+import InfoRow from "../../components/InfoRow";
 import "./LimbitlessPage.css";
+
 export default function LimbitlessPage() {
   const header1 = `Empowering children with limb
             differences through expressive and affordable 3D-printed bionic

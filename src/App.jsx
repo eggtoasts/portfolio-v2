@@ -2,10 +2,10 @@ import { useState } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import ProjectPage from "./pages/ProjectPage";
-import LimbitlessPage from "./pages/LimbitlessPage";
-import EventKnightPage from "./pages/EventKnightPage";
+import LimbitlessPage from "./pages/Limbitless/LimbitlessPage";
+import EventKnightPage from "./pages/EventKnight/EventKnightPage";
 
-import AboutPage from "./pages/AboutPage";
+import AboutPage from "./pages/About/AboutPage";
 
 function Social() {}
 

@@ -1,4 +1,4 @@
-import InfoRow from "../components/InfoRow";
+import InfoRow from "../../components/InfoRow";
 import "./EventKnightPage.css";
 export default function EventKnightPage() {
   return (
@@ -9,7 +9,7 @@ export default function EventKnightPage() {
         src="/project-banners/EventKnightPlaceholder.svg"
       ></img>
 
-      <div className="page">
+      <div className="page eventknight">
         <p className="sub-font">PROJECT</p>
         <h1 className="main-font main-title">EventKnight</h1>
 
