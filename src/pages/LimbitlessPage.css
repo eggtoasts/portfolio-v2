@@ -7,6 +7,12 @@
 
 /* rest of internship info*/
 
+.main-title {
+  font-size: 53px;
+
+  margin: 26px 0px;
+}
+
 .info-row {
   display: flex;
   justify-content: space-between;
@@ -58,12 +64,16 @@
   .text-block {
     margin-top: 13px;
     font-family: var(--text-font);
+
+    p {
+      line-height: var(--text-line-height);
+    }
   }
 }
 
 /* Projects for Limbitless */
 .project-container {
-  margin-top: 74px;
+  margin-top: 94px;
   display: flex;
 
   flex-direction: column;

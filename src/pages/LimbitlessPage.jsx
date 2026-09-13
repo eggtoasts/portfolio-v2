@@ -10,7 +10,7 @@ export default function LimbitlessPage() {
 
       <div className="page">
         <p className="sub-font">INTERNSHIP</p>
-        <h1 className="main-font">Limbitless Solutions</h1>
+        <h1 className="main-font main-title">Limbitless Solutions</h1>
 
         {/* info abt limb, should  make it into a component  in the future for other pages*/}
         <div className="info-row">
