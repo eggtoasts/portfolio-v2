@@ -7,6 +7,7 @@ import LimbitlessPage from "./pages/Limbitless/LimbitlessPage";
 import EventKnightPage from "./pages/EventKnight/EventKnightPage";
 import AboutPage from "./pages/About/AboutPage";
 import { pageSections } from "./data/pageSections";
+import MyProjects from "./pages/MyProjects/MyProjects";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("Limbitless");
@@ -68,6 +69,7 @@ function App() {
           {currentPage == "Limbitless" && <LimbitlessPage />}
 
           {currentPage == "EventKnight" && <EventKnightPage />}
+          {currentPage == "MyProjects" && <MyProjects />}
         </div>
       </div>
     </>

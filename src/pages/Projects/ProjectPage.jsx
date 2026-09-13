@@ -111,7 +111,10 @@ export default function ProjectPage({ setCurrentPage }) {
           className="project-card"
           onClick={() => setCurrentPage("EventKnight")}
         >
-          <div className="project1"></div>
+          <img
+            className="project1"
+            src="/project-thumbnails/EventKnightThumbnail.png"
+          ></img>
           <div className="project-info-row">
             <p className="title main-font"> EventKnight </p>
             <p className="type sub-font"> PROJECT </p>
@@ -121,8 +124,14 @@ export default function ProjectPage({ setCurrentPage }) {
             A platform designed for discovering and managing campus events.
           </p>
         </div>
-        <div className="project-card">
-          <div className="project1"></div>
+        <div
+          className="project-card"
+          onClick={() => setCurrentPage("MyProjects")}
+        >
+          <img
+            className="project1"
+            src="/project-thumbnails/ProjectThumbnail.png"
+          ></img>
           <div className="project-info-row">
             <p className="title main-font"> My Projects </p>
             <p className="type sub-font"> LEARNING </p>
@@ -133,7 +142,10 @@ export default function ProjectPage({ setCurrentPage }) {
           </p>
         </div>
         <div className="project-card">
-          <div className="project1"></div>
+          <img
+            className="project1"
+            src="/project-thumbnails/PortfolioThumbnail.png"
+          ></img>
           <div className="project-info-row">
             <p className="title main-font">My Portfolio</p>
             <p className="type sub-font"> FIGMA & GITHUB </p>

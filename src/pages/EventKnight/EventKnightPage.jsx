@@ -63,9 +63,32 @@ export default function EventKnightPage() {
             header={"Finding events at UCF is harder than it should be."}
             arr={[
               "Campus events are spread across so many platforms that most students miss out simply because they didn't know where to look.",
+              "The core issue isn't a lack of engagement but a lack of discovery.  To find out what's happening, a student has to already be in each RSO's Discord, follow their Instagram, dig through KnightConnect, or catch it by word of mouth. For event organizers, this forces them to become full-time marketers just to get a room of twenty people. ",
             ]}
             color={"orange"}
             coloredText={"harder"}
+          />
+        </div>
+
+        <div id="design">
+          <Paragraph
+            subheader={"THE DESIGN PROCESS"}
+            header={"idk"}
+            arr={["..."]}
+            color={""}
+            coloredText={""}
+          />
+        </div>
+
+        <div id="solution">
+          <Paragraph
+            subheader={"THE SOLUTION"}
+            header={"One hub for everything happening on campus."}
+            arr={[
+              "EventKnight combines campus events into a single, searchable platform. Students browse, filter, and RSVP; organizers post and promote; everyone stops relying on scattered group chats.",
+            ]}
+            color={""}
+            coloredText={""}
           />
         </div>
       </div>

@@ -9,6 +9,8 @@ export const pageSections = {
   EventKnight: [
     { label: "Context", id: "context" },
     { label: "The Problem", id: "problem" },
+    { label: "The Solution", id: "solution" },
+    { label: "The Design Process", id: "design" },
   ],
   About: [
     { label: "Hi!", id: "hi" },

@@ -104,6 +104,7 @@
 .project1 {
   aspect-ratio: 3 / 2; /* keeps the card proportional as it resizes */
   background-color: red;
+  height: 338px;
 }
 
 .project-card {
