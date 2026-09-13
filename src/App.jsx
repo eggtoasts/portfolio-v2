@@ -14,15 +14,30 @@ function App() {
   // We'll have main, project1, project2
   const [currentPage, setCurrentPage] = useState("Limbitless");
 
+  const tocSections = {
+    Limbitless: [
+      "Mission",
+      "Project 01",
+      "Project 02",
+      "Project 03",
+      "Project 04",
+    ],
+    EventKnight: ["Context", "Problem Statement", "Design Process", "Solution"],
+  };
+
+  const isTocPage = ["Limbitless", "EventKnight"].includes(currentPage);
+
   return (
     <>
       <div className="app-layout">
-        <Sidebar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        <TOCSidebar
-          sections={["Test", "Test1"]}
-          activeIndex={0}
-          setCurrentPage={setCurrentPage}
-        />
+        {isTocPage ? (
+          <TOCSidebar
+            sections={tocSections[currentPage]}
+            setCurrentPage={setCurrentPage}
+          />
+        ) : (
+          <Sidebar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        )}
 
         {/* main page will be here */}
         <div className="main-content">

@@ -48,14 +48,6 @@ export default function LimbitlessPage() {
           coloredText={"Empowering"}
         />
 
-        <Paragraph
-          subheader={"TEST"}
-          header={"woahhh"}
-          arr={arr}
-          color={""}
-          coloredText={""}
-        />
-
         {/* projects i've worked on */}
 
         <div className="project-container">

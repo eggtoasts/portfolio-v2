@@ -24,7 +24,7 @@ export default function TOCSidebar({
               className={`toc-item ${i === activeIndex ? "active" : ""}`}
             >
               <span className="number sub-font">{i + 1}.</span>
-              <span className="label text-font">{"section"}</span>
+              <span className="label text-font">{section}</span>
             </div>
           ))}
         </div>
