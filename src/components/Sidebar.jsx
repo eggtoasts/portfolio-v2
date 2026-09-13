@@ -1,7 +1,8 @@
 import "./Sidebar.css";
 
-export default function Sidebar({ currentPage, setCurrentPage }) {
+export default function Sidebar({ currentPage, setCurrentPage, activeIndex }) {
   //YIPEE
+  const aboutItems = ["Hi!", "Experience", "Community", "Gallery"];
 
   return (
     <>
@@ -31,23 +32,18 @@ export default function Sidebar({ currentPage, setCurrentPage }) {
               About
               {currentPage == "About" && (
                 <div className="about-section">
-                  <div className="about-titles">
-                    <div className="line"></div>
-                    <button className="text-font">Hi!</button>
-                  </div>
-
-                  <div className="about-titles">
-                    <div className="line"></div>
-                    <button className="text-font">Experience</button>
-                  </div>
-                  <div className="about-titles">
-                    <div className="line"></div>
-                    <button className="text-font">Community</button>
-                  </div>
-                  <div className="about-titles">
-                    <div className="line"></div>
-                    <button className="text-font">Gallery</button>
-                  </div>
+                  {aboutItems.map((item, i) => (
+                    <div className="about-titles" key={i}>
+                      <div
+                        className={`line ${i === activeIndex ? "line-active" : ""}`}
+                      ></div>
+                      <button
+                        className={`text-font ${i === activeIndex ? "sub-active" : ""}`}
+                      >
+                        {item}
+                      </button>
+                    </div>
+                  ))}
                 </div>
               )}
             </button>

@@ -41,40 +41,26 @@ export default function LimbitlessPage() {
 
         {/* mission */}
 
-        <Paragraph
-          subheader={"THE MISSION"}
-          header={header1}
-          arr={arr}
-          color={"blue"}
-          coloredText={"Empowering"}
-        />
+        <div id="mission">
+          <Paragraph
+            subheader={"THE MISSION"}
+            header={header1}
+            arr={arr}
+            color={"blue"}
+            coloredText={"Empowering"}
+          />
+        </div>
 
         {/* projects i've worked on */}
 
         <div className="project-container">
           {/* project 1 */}
-          <div className="project-item">
-            <div className="project-block">
-              <img className="project-arrow" src="/arrow.svg" alt="toggle" />
-              <div className="project-info">
-                <div className="project-subheader-row">
-                  <p className="project-subheader">PROJECT 01</p>
-                </div>
-
-                <p className="title">WCAG Compliance</p>
-                <p className="description">
-                  Making the main website more accessible, and fixing visual
-                  bugs.
-                </p>
-              </div>
-
-              <img className="project-photo"></img>
-            </div>
-
-            {/* Below this block should only show when user presses the arrow!! */}
-
-            <div className="project-toggle">
-              {/* project info */}
+          <div id="project-01">
+            <ProjectItem
+              number="PROJECT 01"
+              title="WCAG Compliance"
+              description="Making the main website more accessible, and fixing visual bugs."
+            >
               <InfoRow
                 columns={[
                   { label: "TEAM", values: ["Web Development & Design"] },
@@ -83,54 +69,107 @@ export default function LimbitlessPage() {
                   { label: "TIMELINE", values: ["Jan 2026 - Current"] },
                 ]}
               />
-
-              {/* text */}
-
               <Paragraph
-                subheader={"TASK"}
-                header={""}
+                subheader="TASK"
+                header=""
                 arr={["example1"]}
-                color={""}
-                coloredText={""}
                 images={["LifeIsRoblox.png", "LifeIsRoblox.png"]}
               />
-
               <Paragraph
-                subheader={"WHAT I LEARNED"}
-                header={""}
+                subheader="WHAT I LEARNED"
+                header=""
                 arr={["example1"]}
-                color={""}
-                coloredText={""}
               />
-            </div>
+            </ProjectItem>
           </div>
 
-          {/* project 1 */}
-          <ProjectItem
-            number="PROJECT 01"
-            title="WCAG Compliance"
-            description="Making the main website more accessible, and fixing visual bugs."
-          >
-            <InfoRow
-              columns={[
-                { label: "TEAM", values: ["Web Development & Design"] },
-                { label: "WORKED W/", values: ["Sabrina N."] },
-                { label: "TOOLS", values: ["HTML/CSS/JS"] },
-                { label: "TIMELINE", values: ["Jan 2026 - Current"] },
-              ]}
-            />
-            <Paragraph
-              subheader="TASK"
-              header=""
-              arr={["example1"]}
-              images={["LifeIsRoblox.png", "LifeIsRoblox.png"]}
-            />
-            <Paragraph
-              subheader="WHAT I LEARNED"
-              header=""
-              arr={["example1"]}
-            />
-          </ProjectItem>
+          <div id="project-02">
+            <ProjectItem
+              number="PROJECT 02"
+              title="Our Work page"
+              description="Making the main website more accessible, and fixing visual bugs."
+            >
+              <InfoRow
+                columns={[
+                  { label: "TEAM", values: ["Web Development & Design"] },
+                  { label: "WORKED W/", values: ["Victoria T."] },
+                  { label: "TOOLS", values: ["HTML/CSS/JS"] },
+                  { label: "TIMELINE", values: ["Jan 2026 - Current"] },
+                ]}
+              />
+              <Paragraph subheader="TASK" header="" arr={["example1"]} />
+              <Paragraph
+                subheader="WHAT I LEARNED"
+                header=""
+                arr={["example1"]}
+              />
+            </ProjectItem>
+          </div>
+
+          <div id="project-03">
+            <ProjectItem
+              number="PROJECT 03"
+              title="Arm Socket Upload"
+              description="Making the main website more accessible, and fixing visual bugs."
+            >
+              <InfoRow
+                columns={[
+                  { label: "TEAM", values: ["Web Development & Design"] },
+                  { label: "WORKED W/", values: ["Victoria T."] },
+                  {
+                    label: "TOOLS",
+                    values: ["Flutter", "Google Drive API", "Figma"],
+                  },
+                  { label: "TIMELINE", values: ["Jan 2026 - Current"] },
+                ]}
+              />
+              <Paragraph subheader="TASK" header="" arr={["example1"]} />
+              <Paragraph
+                subheader="WHAT I LEARNED"
+                header=""
+                arr={["example1"]}
+              />
+            </ProjectItem>
+          </div>
+
+          <div id="project-04">
+            <ProjectItem
+              number="PROJECT 04"
+              title="Inventory Management"
+              description="Making the main website more accessible, and fixing visual bugs."
+            >
+              <InfoRow
+                columns={[
+                  { label: "TEAM", values: ["Web Development & Design"] },
+                  {
+                    label: "WORKED W/",
+                    values: [
+                      "Sabrina N.",
+                      "John C.",
+                      "Finishing Paint Team",
+                      "Arm Quality Team",
+                    ],
+                  },
+                  {
+                    label: "TOOLS",
+                    values: [
+                      "Flutter",
+                      "Firebase",
+                      "Google Sheets API",
+                      "Figma",
+                    ],
+                  },
+                  { label: "TIMELINE", values: ["Jan 2026 - Current"] },
+                ]}
+              />
+              <Paragraph subheader="TASK" header="" arr={["example1"]} />
+              <Paragraph
+                subheader="WHAT I LEARNED"
+                header=""
+                arr={["example1"]}
+              />
+            </ProjectItem>
+          </div>
         </div>
       </div>
     </>

@@ -109,6 +109,14 @@
   background-color: var(--unselected-sidebar-text-color);
 }
 
+.line-active {
+  background-color: white;
+}
+
+.about-titles .sub-active {
+  color: white;
+}
+
 /* == tablet == */
 
 @media only screen and (max-width: 1200px) {

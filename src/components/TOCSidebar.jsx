@@ -1,10 +1,6 @@
 import "./TOCSidebar.css";
 
-export default function TOCSidebar({
-  sections,
-  activeIndex = 0,
-  setCurrentPage,
-}) {
+export default function TOCSidebar({ sections, activeIndex, setCurrentPage }) {
   return (
     <div className="sidebar">
       {/* go back arrow */}
