@@ -93,7 +93,10 @@ export default function ProjectPage({ setCurrentPage }) {
           className="project-card"
           onClick={() => setCurrentPage("Limbitless")}
         >
-          <div className="project1"></div>
+          <img
+            className="project1"
+            src="/project-thumbnails/LimbitlessPhoto.png"
+          ></img>
           <div className="project-info-row">
             <p className="title main-font"> Limbitless Solutions </p>
             <p className="type sub-font"> INTERNSHIP </p>

@@ -1,6 +1,17 @@
 import "./TOCSidebar.css";
 
-export default function TOCSidebar({ sections, activeIndex, setCurrentPage }) {
+export default function TOCSidebar({
+  sections,
+  activeIndex = 0,
+  setCurrentPage,
+}) {
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
   return (
     <div className="sidebar">
       {/* go back arrow */}
@@ -18,16 +29,20 @@ export default function TOCSidebar({ sections, activeIndex, setCurrentPage }) {
             <div
               key={i}
               className={`toc-item ${i === activeIndex ? "active" : ""}`}
+              onClick={() => scrollToSection(section.id)}
             >
               <span className="number sub-font">{i + 1}.</span>
-              <span className="label text-font">{section}</span>
+              <span className="label text-font">{section.label}</span>
             </div>
           ))}
         </div>
       </div>
 
       {/* back to top */}
-      <button className="back-to-top">
+      <button
+        className="back-to-top"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
         <img src="/top-arrow.svg" alt="up" />
         <span className="sub-font">BACK TO THE TOP</span>
       </button>

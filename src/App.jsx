@@ -6,33 +6,7 @@ import ProjectPage from "./pages/Projects/ProjectPage";
 import LimbitlessPage from "./pages/Limbitless/LimbitlessPage";
 import EventKnightPage from "./pages/EventKnight/EventKnightPage";
 import AboutPage from "./pages/About/AboutPage";
-
-// for about scroll
-const aboutSectionIds = ["hi", "experience", "community", "gallery"];
-
-// context labels shown in the sidebar
-const tocSections = {
-  Limbitless: [
-    "Mission",
-    "Project 01",
-    "Project 02",
-    "Project 03",
-    "Project 04",
-  ],
-  EventKnight: ["Context", "The Problem"],
-};
-
-// context div ids
-const tocSectionIds = {
-  Limbitless: [
-    "mission",
-    "project-01",
-    "project-02",
-    "project-03",
-    "project-04",
-  ],
-  EventKnight: ["context", "problem"],
-};
+import { pageSections } from "./data/pageSections";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("Limbitless");
@@ -40,10 +14,7 @@ function App() {
 
   const isTocPage = ["Limbitless", "EventKnight"].includes(currentPage);
 
-  // pick the right section ids
-  let sectionIds = [];
-  if (isTocPage) sectionIds = tocSectionIds[currentPage] || [];
-  else if (currentPage === "About") sectionIds = aboutSectionIds;
+  const sections = pageSections[currentPage] || [];
 
   useEffect(() => {
     // reset when switching pages
@@ -51,15 +22,11 @@ function App() {
 
     function handleScroll() {
       // Find which section is near the top of the screen
-      sectionIds.forEach((id, i) => {
-        const el = document.getElementById(id);
-
-        // Then set it as the "active" section in sidebar
+      sections.forEach((section, i) => {
+        const el = document.getElementById(section.id);
         if (el) {
           const top = el.getBoundingClientRect().top;
-          if (top < 300) {
-            setActiveIndex(i);
-          }
+          if (top < 300) setActiveIndex(i);
         }
       });
     }
@@ -77,14 +44,15 @@ function App() {
       <div className="app-layout">
         {isTocPage ? (
           <TOCSidebar
-            sections={tocSections[currentPage]}
-            setCurrentPage={setCurrentPage}
+            sections={sections}
             activeIndex={activeIndex}
+            setCurrentPage={setCurrentPage}
           />
         ) : (
           <Sidebar
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
+            sections={sections}
             activeIndex={activeIndex}
           />
         )}

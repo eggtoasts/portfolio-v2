@@ -1,0 +1,4 @@
+html {
+  scroll-behavior: smooth; /* smooth scrolling globally */
+  scroll-padding-top: 20px; /* gap so sections aren't flush against the top */
+}

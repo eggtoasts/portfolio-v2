@@ -1,8 +1,12 @@
 import "./Sidebar.css";
 
-export default function Sidebar({ currentPage, setCurrentPage, activeIndex }) {
+export default function Sidebar({
+  currentPage,
+  setCurrentPage,
+  sections = [],
+  activeIndex,
+}) {
   //YIPEE
-  const aboutItems = ["Hi!", "Experience", "Community", "Gallery"];
 
   return (
     <>
@@ -32,15 +36,16 @@ export default function Sidebar({ currentPage, setCurrentPage, activeIndex }) {
               About
               {currentPage == "About" && (
                 <div className="about-section">
-                  {aboutItems.map((item, i) => (
+                  {sections.map((item, i) => (
                     <div className="about-titles" key={i}>
                       <div
                         className={`line ${i === activeIndex ? "line-active" : ""}`}
                       ></div>
                       <button
+                        onClick={() => scrollToSection(item.id)}
                         className={`text-font ${i === activeIndex ? "sub-active" : ""}`}
                       >
-                        {item}
+                        {item.label}
                       </button>
                     </div>
                   ))}
