@@ -79,13 +79,9 @@ export default function LimbitlessPage() {
 
         <div className="project-container">
           <div className="project-block">
+            <img className="project-arrow" src="/sams_icon.svg" alt="toggle" />
             <div className="project-info">
               <div className="project-subheader-row">
-                <img
-                  className="project-arrow"
-                  src="/sams_icon.svg"
-                  alt="toggle"
-                />
                 <p className="project-subheader">PROJECT 01</p>
               </div>
 
@@ -99,6 +95,42 @@ export default function LimbitlessPage() {
           </div>
 
           {/* Below this block should only show when user presses the arrow!! */}
+
+          <div className="project-toggle">
+            <div className="info-row">
+              <p className="info-col sub-font">
+                <p>TEAM</p>
+
+                <div className="info-block text-font">
+                  <p>Web Development & Design</p>
+                </div>
+              </p>
+
+              <p className="info-col sub-font">
+                <p>WORKED W/</p>
+
+                <div className="info-block">
+                  <p>Sabrina N.</p>
+                </div>
+              </p>
+
+              <p className="info-col sub-font">
+                <p>TOOLS</p>
+
+                <div className="info-block">
+                  <p>HTML/CSS/JS</p>
+                </div>
+              </p>
+
+              <p className="info-col sub-font">
+                <p>TIMELINE</p>
+
+                <div className="info-block text-font">
+                  <p>Jan 2026 - Current</p>
+                </div>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>

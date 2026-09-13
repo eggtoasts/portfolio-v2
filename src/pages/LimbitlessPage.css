@@ -84,19 +84,23 @@
   display: flex;
 }
 
+.project-arrow {
+  margin-top: 2px;
+
+  width: 16px;
+  height: auto;
+  margin-bottom: auto;
+}
+
 .project-info {
   display: flex;
   flex-direction: column;
+  padding-inline: 20px;
 
   .project-subheader-row {
     display: flex;
     align-items: center;
     gap: 12px;
-  }
-
-  .project-arrow {
-    width: 16px;
-    height: auto;
   }
 
   .project-subheader,
@@ -126,4 +130,21 @@
 
   width: 428px;
   height: 239px;
+}
+
+/* toggeable project information */
+
+.project-toggle {
+  padding-left: 36px;
+  margin-top: 26px;
+
+  .info-col > p {
+    color: var(--text-gray);
+  }
+
+  .info-block {
+    /* border-left: 0px;
+  padding-left: 0px; */
+    border-left: 2.5px solid var(--text-gray);
+  }
 }
