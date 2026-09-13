@@ -3,6 +3,7 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import ProjectPage from "./pages/ProjectPage";
 import LimbitlessPage from "./pages/LimbitlessPage";
+import EventKnightPage from "./pages/EventKnightPage";
 
 import AboutPage from "./pages/AboutPage";
 
@@ -10,7 +11,7 @@ function Social() {}
 
 function App() {
   // We'll have main, project1, project2
-  const [currentPage, setCurrentPage] = useState("Limbitless");
+  const [currentPage, setCurrentPage] = useState("EventKnight");
 
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
           {currentPage == "Projects" && <ProjectPage />}
           {currentPage == "About" && <AboutPage />}
 
-          {currentPage == "Limbitless" && <LimbitlessPage />}
+          {currentPage == "EventKnight" && <EventKnightPage />}
         </div>
       </div>
     </>
