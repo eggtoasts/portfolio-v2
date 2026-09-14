@@ -3,23 +3,29 @@
 .project-banner {
   margin-top: 20px;
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* rest of internship info*/
 
 .main-title {
   font-size: 53px;
-
   margin: 26px 0px;
+  overflow-wrap: anywhere;
 }
 
 .info-row {
   display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   justify-content: space-between;
 }
 
 .info-col {
   display: flex;
+  flex: 1 1 180px;
+  min-width: 0;
   flex-direction: column;
   margin-bottom: 74px;
 }
@@ -29,6 +35,7 @@
   margin-top: 19px;
   line-height: 24px;
   padding-left: 10px;
+  overflow-wrap: anywhere;
 }
 
 /* === article page stylings === */
@@ -59,7 +66,7 @@
     font-family: var(--main-font);
     font-size: 36px;
 
-    line-height: 54px;
+    line-height: 1.5;
     margin: 0px;
   }
 
@@ -83,20 +90,28 @@
 
 .project-block {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .project-arrow {
   margin-top: 6px;
-
   margin-bottom: auto;
-
+  flex-shrink: 0;
+  cursor: pointer;
   transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+.project-arrow.open {
+  transform: rotate(180deg);
 }
 
 .project-info {
   display: flex;
+  flex: 1 1 280px;
+  min-width: 0;
   flex-direction: column;
-  padding-inline: 20px;
 
   .project-subheader-row {
     display: flex;
@@ -115,25 +130,25 @@
 
   .title {
     margin: 0px;
-
     font-size: 36px;
     font-family: var(--main-font);
+    overflow-wrap: anywhere;
   }
 
   .description {
     font-family: var(--text-font);
   }
 }
+
 .project-photo {
   margin-left: auto;
-
   background-color: var(--text-gray);
-
-  width: 428px;
-  height: 239px;
+  width: 100%;
+  max-width: 428px;
+  aspect-ratio: 428 / 239;
+  height: auto;
+  object-fit: cover;
 }
-
-/* toggeable project information */
 
 .project-toggle {
   display: grid;
@@ -157,8 +172,6 @@
   }
 
   .info-block {
-    /* border-left: 0px;
-  padding-left: 0px; */
     border-left: 2.5px solid var(--text-gray);
   }
 }
@@ -169,25 +182,76 @@
   opacity: 1;
 }
 
-.project-arrow {
-  transition: transform 1s ease-in-out;
-}
-.project-arrow.open {
-  transform: rotate(180deg);
-}
-
-/* images of project */
-
 .project-images {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   img {
-    flex: 1;
+    flex: 1 1 240px;
     min-width: 0;
-
-    height: 300px;
-
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
     object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-title {
+    font-size: 44px;
+  }
+
+  .paragraph .header {
+    font-size: 30px;
+  }
+
+  .info-col {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  .main-title {
+    font-size: 34px;
+  }
+
+  .paragraph {
+    margin-bottom: 48px;
+  }
+
+  .paragraph .header {
+    font-size: 25px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .info-col {
+    flex: 1 1 auto;
+    margin-bottom: 28px;
+  }
+
+  .project-container {
+    margin-top: 48px;
+  }
+
+  .project-info .title {
+    font-size: 26px;
+  }
+
+  .project-photo {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+
+  .project-toggle {
+    padding-left: 0px;
+  }
+
+  .project-toggle .project-toggle-inner {
+    padding-left: 0px;
   }
 }

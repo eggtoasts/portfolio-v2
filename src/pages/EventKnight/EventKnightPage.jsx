@@ -70,16 +70,6 @@ export default function EventKnightPage() {
           />
         </div>
 
-        <div id="design">
-          <Paragraph
-            subheader={"THE DESIGN PROCESS"}
-            header={"idk"}
-            arr={["..."]}
-            color={""}
-            coloredText={""}
-          />
-        </div>
-
         <div id="solution">
           <Paragraph
             subheader={"THE SOLUTION"}
@@ -87,6 +77,16 @@ export default function EventKnightPage() {
             arr={[
               "EventKnight combines campus events into a single, searchable platform. Students browse, filter, and RSVP; organizers post and promote; everyone stops relying on scattered group chats.",
             ]}
+            color={""}
+            coloredText={""}
+          />
+        </div>
+
+        <div id="design">
+          <Paragraph
+            subheader={"THE DESIGN PROCESS"}
+            header={"idk"}
+            arr={["..."]}
             color={""}
             coloredText={""}
           />

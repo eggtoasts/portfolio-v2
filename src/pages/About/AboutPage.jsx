@@ -37,7 +37,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* image of me with a caption */}
             <div className="about-me-picture">
               <img
                 className="samRoblox"
@@ -78,11 +77,7 @@ export default function AboutPage() {
                   developing the UI.
                 </p>
 
-                <div className="experience-pictures">
-                  <img src=""></img>
-                  <img src=""></img>
-                  <img src=""></img>
-                </div>
+                <div className="experience-pictures"></div>
               </div>
             </div>
           </div>

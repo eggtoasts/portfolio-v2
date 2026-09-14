@@ -1,0 +1,114 @@
+.sidebar-shell {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: var(--sidebar-padding);
+  padding-block: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  flex-shrink: 0;
+  max-width: 292px;
+  background-color: var(--sidebar-bg);
+}
+
+.sidebar-hamburger,
+.sidebar-backdrop,
+.sidebar-close {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebar-hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    width: 44px;
+    height: 44px;
+    padding: 0px 11px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--sidebar-bg);
+    cursor: pointer;
+  }
+
+  .sidebar-hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 1002;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .sidebar-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .sidebar-shell {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: min(300px, 85vw);
+    max-width: none;
+    box-sizing: border-box;
+    z-index: 1003;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar-shell.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-close {
+    display: block;
+    position: relative;
+    align-self: flex-end;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    padding: 0px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .sidebar-close span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+  }
+
+  .sidebar-close span:first-child {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .sidebar-close span:last-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

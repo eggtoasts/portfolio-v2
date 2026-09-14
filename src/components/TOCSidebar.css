@@ -1,51 +1,64 @@
-.home,
-.back-to-top {
+.toc-sidebar .home,
+.toc-sidebar .back-to-top {
   display: flex;
   background-color: transparent;
   color: white;
-
   align-items: center;
   border: none;
   font-size: 16px;
-
-  img {
-    margin-right: 13px;
-  }
+  padding: 0px;
+  text-align: left;
+  cursor: pointer;
 }
 
-.home {
+.toc-sidebar .home img,
+.toc-sidebar .back-to-top img {
+  margin-right: 13px;
+}
+
+.toc-sidebar .home {
   margin-top: 20px;
   margin-bottom: 49px;
 }
 
-.back-to-top {
+.toc-sidebar .back-to-top {
   margin-top: auto;
   margin-bottom: 20px;
 }
 
-.sidebar-nav {
+.toc-sidebar .toc-explore {
+  background-color: var(--explore-bg);
+  padding: var(--sidebar-padding);
+  border-radius: 14px;
+}
+
+.toc-sidebar .toc-explore > p {
+  color: white;
+}
+
+.toc-sidebar-nav {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 2px;
+}
 
-  /* The divs inside of the navbar */
-  .toc-item {
-    font-size: 16px;
-    text-align: left;
-    padding: 10px 10.5px;
-    border-radius: 13px;
-    border: 0px;
-    color: var(--unselected-sidebar-text-color);
-    background-color: transparent;
-  }
+.toc-sidebar-nav .toc-item {
+  font-size: 16px;
+  text-align: left;
+  padding: 10px 10.5px;
+  border-radius: 13px;
+  border: 0px;
+  color: var(--unselected-sidebar-text-color);
+  background-color: transparent;
+  cursor: pointer;
+}
 
-  .active {
-    color: white;
-    background-color: var(--sidebar-bg);
-  }
+.toc-sidebar-nav .active {
+  color: white;
+  background-color: var(--sidebar-bg);
+}
 
-  .label {
-    margin-left: 2px;
-  }
+.toc-sidebar-nav .label {
+  margin-left: 2px;
 }

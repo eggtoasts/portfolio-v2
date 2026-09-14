@@ -1,13 +1,11 @@
-/* === project page teehee */
-
 .page {
   padding: 40px;
 }
 
 .hero-row {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 20px;
-  /* border: 1px solid red; */
   gap: 20px;
 }
 
@@ -31,6 +29,10 @@
   line-height: 12px;
 }
 
+.info-column {
+  min-width: 0;
+}
+
 .info-column h2 {
   font-weight: var(--normal-poppins);
   font-size: 30px;
@@ -39,9 +41,12 @@
 .animation-of-me {
   margin-left: auto;
   position: relative;
+  max-width: 100%;
 }
 
-/* toolbox */
+.my-avatar {
+  max-width: 100%;
+}
 
 .toolbox-row {
   top: 90%;
@@ -49,6 +54,7 @@
   padding: 5.6px;
   display: flex;
   height: fit-content;
+  max-width: 100%;
   background-color: var(--sidebar-bg);
   position: absolute;
   border-radius: 11.21px;
@@ -56,14 +62,13 @@
 }
 
 .toolbox-row img {
-  /* background-color:  */
   width: 40px;
   position: relative;
+  cursor: pointer;
 }
 
 .toolbox-blue-box {
   transition: all 0.5s ease-in-out;
-
   position: absolute;
   z-index: 0;
   width: 40px;
@@ -72,12 +77,12 @@
   border-radius: 3.92px;
 }
 
-/* === speech bubble === */
 .speech-bubble {
   font-size: 12px;
   position: absolute;
   left: 30%;
   top: -5%;
+  max-width: 70%;
   background-color: white;
   border-radius: 6.76px;
   padding: 8.79px 6px;
@@ -93,7 +98,6 @@
   height: 45px;
 }
 
-/* ==== projects ==== */
 .projects-grid {
   margin-top: 50px;
   display: grid;
@@ -102,16 +106,17 @@
 }
 
 .project1 {
-  aspect-ratio: 3 / 2; /* keeps the card proportional as it resizes */
-  background-color: red;
-  height: 338px;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
 }
 
 .project-card {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-
+  min-width: 0;
   font-size: 16px;
 
   .project-info-row {
@@ -135,7 +140,9 @@
 
 .project-info-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 8px;
 }
 
 @media only screen and (min-width: 1600px) {
@@ -155,9 +162,6 @@
 
   .page {
     padding: 40px 90px;
-  }
-  * {
-    color: pink;
   }
 }
 
@@ -180,27 +184,51 @@
 @media only screen and (max-width: 1200px) {
   .page {
     padding: 40px 60px;
-  }
-  * {
-    color: red;
+    padding-top: 84px;
   }
 }
 
 @media only screen and (max-width: 813px) {
-  * {
-    color: green;
+  .page {
+    padding: 40px 24px;
+    padding-top: 84px;
   }
+
+  .hey-its-sam {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
   .info-column .my-description {
     font-size: 20px;
   }
+
   .design-box {
     height: 35px;
   }
-  .hero-row {
-    flex-wrap: wrap;
+
+  .no-break {
+    white-space: normal;
   }
+
   .animation-of-me {
     margin-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .toolbox-row {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .speech-bubble {
+    left: auto;
+    /* right: 0px; */
   }
 
   .projects-grid {

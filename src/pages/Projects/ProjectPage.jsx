@@ -7,8 +7,8 @@ export default function ProjectPage({ setCurrentPage }) {
     "welcome to my portfolio!",
     "i'm a software engineer! (top 3)",
     "i'm a designer!",
-    "i'm a motion animator!",
     "i'm a co-founder of a UI/UX community!",
+    "i'm a motion animator!",
   ];
 
   const positions = {
@@ -78,10 +78,10 @@ export default function ProjectPage({ setCurrentPage }) {
               onClick={() => setCurrentAnimation("Star")}
               src="/toolbox/Star.svg"
             ></img>
-            <img
+            {/* <img
               onClick={() => setCurrentAnimation("Motion")}
               src="/toolbox/Motion.svg"
-            ></img>
+            ></img> */}
           </div>
         </div>
       </div>

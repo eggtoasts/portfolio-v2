@@ -1,10 +1,19 @@
 .about-grid {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
+.about-me-info {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
 .samRoblox {
-  width: 476px;
+  width: 100%;
+  max-width: 476px;
+  height: auto;
+  display: block;
 }
 
 .about-text {
@@ -18,6 +27,8 @@
 }
 
 .about-me-picture {
+  flex: 1 1 320px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,11 +59,12 @@
 
 .experience-icon {
   height: 46px;
+  flex-shrink: 0;
 }
 
 .experience-card {
   display: flex;
-
+  flex-wrap: wrap;
   gap: 21px;
 
   .date,
@@ -64,26 +76,39 @@
 
 .experience-info {
   display: flex;
-  width: 100%;
+  flex: 1 1 300px;
+  min-width: 0;
   flex-direction: column;
   gap: 8px;
 }
 
 .title-date-row {
   display: flex;
-
+  flex-wrap: wrap;
+  gap: 4px 16px;
   justify-content: space-between;
 }
 
 .experience-pictures {
   display: flex;
-
-  img {
-  }
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 @media only screen and (max-width: 1200px) {
   .about-text {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .about-me-info,
+  .about-me-picture {
+    flex: 1 1 auto;
   }
 }

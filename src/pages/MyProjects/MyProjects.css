@@ -1,0 +1,15 @@
+.myprojects .project-container {
+  gap: 26px;
+}
+
+.project-link {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: auto;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.project-link-arrow {
+  display: block;
+}

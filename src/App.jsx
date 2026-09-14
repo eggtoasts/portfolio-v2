@@ -13,7 +13,9 @@ function App() {
   const [currentPage, setCurrentPage] = useState("Limbitless");
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const isTocPage = ["Limbitless", "EventKnight"].includes(currentPage);
+  const isTocPage = ["Limbitless", "EventKnight", "MyProjects"].includes(
+    currentPage,
+  );
 
   const sections = pageSections[currentPage] || [];
 
@@ -21,14 +23,12 @@ function App() {
     // reset when switching pages
     setActiveIndex(0);
 
+    const pageItems = pageSections[currentPage] || [];
+
     function handleScroll() {
-      // Find which section is near the top of the screen
-      sections.forEach((section, i) => {
+      pageItems.forEach((section, i) => {
         const el = document.getElementById(section.id);
-        if (el) {
-          const top = el.getBoundingClientRect().top;
-          if (top < 300) setActiveIndex(i);
-        }
+        if (el && el.getBoundingClientRect().top < 300) setActiveIndex(i);
       });
     }
 
@@ -38,41 +38,35 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [currentPage]);
 
-  console.log("currentPage:", currentPage, "activeIndex:", activeIndex);
+  // console.log("currentPage:", currentPage, "activeIndex:", activeIndex);
 
   return (
-    <>
-      <div className="app-layout">
-        {isTocPage ? (
-          <TOCSidebar
-            sections={sections}
-            activeIndex={activeIndex}
-            setCurrentPage={setCurrentPage}
-          />
-        ) : (
-          <Sidebar
-            currentPage={currentPage}
-            setCurrentPage={setCurrentPage}
-            sections={sections}
-            activeIndex={activeIndex}
-          />
+    <div className="app-layout">
+      {isTocPage ? (
+        <TOCSidebar
+          sections={sections}
+          activeIndex={activeIndex}
+          setCurrentPage={setCurrentPage}
+        />
+      ) : (
+        <Sidebar
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          sections={sections}
+          activeIndex={activeIndex}
+        />
+      )}
+
+      <div className="main-content">
+        {currentPage == "Projects" && (
+          <ProjectPage setCurrentPage={setCurrentPage} />
         )}
-
-        {/* main page will be here */}
-        <div className="main-content">
-          {console.log("so our current page is --> " + currentPage)}
-
-          {currentPage == "Projects" && (
-            <ProjectPage setCurrentPage={setCurrentPage} />
-          )}
-          {currentPage == "About" && <AboutPage />}
-          {currentPage == "Limbitless" && <LimbitlessPage />}
-
-          {currentPage == "EventKnight" && <EventKnightPage />}
-          {currentPage == "MyProjects" && <MyProjects />}
-        </div>
+        {currentPage == "About" && <AboutPage />}
+        {currentPage == "Limbitless" && <LimbitlessPage />}
+        {currentPage == "EventKnight" && <EventKnightPage />}
+        {currentPage == "MyProjects" && <MyProjects />}
       </div>
-    </>
+    </div>
   );
 }
 

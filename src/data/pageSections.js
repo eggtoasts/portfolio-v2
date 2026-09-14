@@ -18,4 +18,14 @@ export const pageSections = {
     { label: "Community", id: "community" },
     { label: "Gallery", id: "gallery" },
   ],
+  MyProjects: [
+    { label: "Project 01", id: "project-01" },
+    { label: "Project 02", id: "project-02" },
+    { label: "Project 03", id: "project-03" },
+    { label: "Project 04", id: "project-04" },
+    { label: "Project 05", id: "project-05" },
+    { label: "Project 06", id: "project-06" },
+    { label: "Project 07", id: "project-07" },
+    { label: "Project 08", id: "project-08" },
+  ],
 };
