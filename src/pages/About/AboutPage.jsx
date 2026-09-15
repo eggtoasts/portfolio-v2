@@ -127,10 +127,13 @@ export default function AboutPage() {
 
         <div id="community">
           <h2 className="main-font">Community</h2>
+
+          <p className="text-font">Coming soon...</p>
         </div>
 
         <div id="gallery">
           <h2 className="main-font">Gallery</h2>
+          <p className="text-font">Coming soon...</p>
         </div>
       </div>
     </>

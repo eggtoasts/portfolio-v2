@@ -27,7 +27,7 @@ export default function ProjectPage({ setCurrentPage }) {
           <h2 className="my-description main-font">
             <span className="no-break">
               {" "}
-              A <span className="developer">developer</span> who translates{" "}
+              A <span className="developer">web developer</span> who translates{" "}
               <span className="user-needs">user needs</span> into
             </span>{" "}
             <br></br>
@@ -38,7 +38,7 @@ export default function ProjectPage({ setCurrentPage }) {
           </h2>
 
           <p className="main-font">
-            Ex-Product Designer & SWE Intern at Limbitless Solutions
+            Previous Web Designer & SWE Intern at Limbitless Solutions
           </p>
         </div>
 
