@@ -11,6 +11,8 @@ export const pageSections = {
     { label: "The Problem", id: "problem" },
     { label: "The Solution", id: "solution" },
     { label: "The Design Process", id: "design" },
+    { label: "Architecture", id: "architecture" },
+    { label: "Reflections", id: "reflections" },
   ],
   About: [
     { label: "Hi!", id: "hi" },

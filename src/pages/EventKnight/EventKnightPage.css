@@ -1,5 +1,129 @@
 .eventknight .info-block {
-  /* border-left: 0px;
-  padding-left: 0px; */
   border-left: 2.5px solid var(--orange);
+}
+
+.eventknight .orange {
+  color: var(--text-orange);
+}
+
+/* major sections so mono + big header + text */
+.eventknight .case-section {
+  margin-bottom: 90px;
+}
+
+.eventknight .case-section .paragraph {
+  margin-bottom: 0;
+}
+
+/* subparts so grey mono label + text */
+.eventknight .sub-part-label {
+  color: var(--text-gray);
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.eventknight .sub-part-text {
+  line-height: var(--text-line-height);
+  margin-top: 13px;
+}
+
+.eventknight .sub-part-caption {
+  color: var(--text-gray);
+  font-size: var(--caption-size);
+  margin-top: 8px;
+}
+
+/* section images for resizing*/
+.eventknight .section-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+
+.eventknight .section-image.contained {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eventknight .section-image.small {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eventknight .lowfi-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.eventknight .lowfi-row .section-image {
+  flex: 1 1 200px;
+  min-width: 0;
+  margin: 0;
+}
+
+.eventknight .solution-bullets {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+/* === FEATURES ===== */
+.eventknight .feature-group {
+  margin-top: 24px;
+}
+
+.eventknight .feature-heading {
+  font-size: 16px;
+  font-weight: var(--bold-poppins);
+  margin: 0 0 8px 0;
+}
+
+.eventknight .feature-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.eventknight .feature-list li {
+  margin-bottom: 8px;
+  line-height: var(--text-line-height);
+}
+
+/* quote*/
+.eventknight .pull-quote {
+  font-size: 30px;
+  line-height: 1.3;
+  border-left: 4px solid var(--orange);
+  padding-left: 20px;
+  margin: 40px 0;
+}
+
+/* ====== MOBILE ===== */
+@media only screen and (max-width: 1200px) {
+  .eventknight .case-section {
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  .eventknight .case-section {
+    margin-bottom: 48px;
+  }
+
+  .eventknight .pull-quote {
+    font-size: 22px;
+  }
+
+  .eventknight .sub-part-label {
+    margin-top: 32px;
+  }
+
+  /* stack the low-fi wireframes on mobile */
+  .eventknight .lowfi-row {
+    flex-direction: column;
+  }
 }

@@ -28,7 +28,7 @@ export default function LimbitlessPage() {
           columns={[
             {
               label: "ROLE",
-              values: ["Product Designer", "Software Engineer Intern"],
+              values: ["UI/UX Designer", "Software Engineer Intern"],
             },
             { label: "ORG", values: ["Health", "Technology"] },
             {

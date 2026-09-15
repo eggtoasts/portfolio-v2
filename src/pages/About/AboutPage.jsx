@@ -65,7 +65,7 @@ export default function AboutPage() {
               <div className="experience-info">
                 <div className="title-date-row">
                   <p className="title">
-                    Software Engineer & Product Designer Intern
+                    Software Engineer & UI/UX Designer Intern
                   </p>
                   <p className="date">May 2026 - Aug 2026</p>
                 </div>
