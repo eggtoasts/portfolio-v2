@@ -187,7 +187,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  img {
+  img,
+  video {
     flex: 1 1 240px;
     min-width: 0;
     max-width: 100%;

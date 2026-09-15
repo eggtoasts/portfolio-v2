@@ -8,6 +8,7 @@ const projects = [
     title: "MoodHacker",
     description:
       "Aims to help individuals that struggle to cope with difficult feelings.",
+    image: "/my-projects-images/MoodHacker.png",
     url: "#",
   },
   {
@@ -16,6 +17,7 @@ const projects = [
     title: "Etch-a-Sketch",
     description:
       "Wanted to practice DOM manipulation so I built a drawing app.",
+    image: "/my-projects-images/EtchASketch.png",
     url: "#",
   },
   {
@@ -23,6 +25,7 @@ const projects = [
     number: "PROJECT 03",
     title: "Calculator",
     description: "A simple calculator inspired by Apple's own UI.",
+    image: "/my-projects-images/Calculator.png",
     url: "#",
   },
   {
@@ -30,6 +33,7 @@ const projects = [
     number: "PROJECT 04",
     title: "Todo-list",
     description: "Todo-list built entirely with vanilla JS.",
+    image: "/my-projects-images/to-do.png",
     url: "#",
   },
   {
@@ -37,6 +41,7 @@ const projects = [
     number: "PROJECT 05",
     title: "Weather App",
     description: "Visualization app using VisualCrossing's Weather API.",
+    image: "/my-projects-images/weather-app.png",
     url: "#",
   },
   {
@@ -44,6 +49,7 @@ const projects = [
     number: "PROJECT 06",
     title: "Manga Tracker",
     description: "Full Stack manga racker, inspired by MyAnimeList (MAL).",
+    image: "/my-projects-images/manga-list.png",
     url: "#",
   },
   {
@@ -52,6 +58,7 @@ const projects = [
     title: "EventKnight",
     description:
       "A web + mobile platform designed for discovering and managing UCF campus events.",
+    image: "/my-projects-images/EventKnightThumbnail.png",
     url: "#",
   },
   {
@@ -59,6 +66,7 @@ const projects = [
     number: "PROJECT 08",
     title: "CookQuest",
     description: " AI-powered kitchen companion for the Meta Quest.",
+    image: "/my-projects-images/CookQuest.gif",
     url: "#",
   },
 ];
@@ -92,6 +100,7 @@ export default function MyProjects() {
                 title={project.title}
                 description={project.description}
                 url={project.url}
+                photo={project.image}
               />
             </div>
           ))}
@@ -101,7 +110,7 @@ export default function MyProjects() {
   );
 }
 
-function LearningProject({ number, title, description, url }) {
+function LearningProject({ number, title, description, url, photo }) {
   return (
     <div className="project-item">
       <div className="project-block">
@@ -125,7 +134,11 @@ function LearningProject({ number, title, description, url }) {
           <p className="description">{description}</p>
         </div>
 
-        <img className="project-photo"></img>
+        <img
+          className="project-photo"
+          src={photo}
+          alt={photo ? title : ""}
+        ></img>
       </div>
     </div>
   );

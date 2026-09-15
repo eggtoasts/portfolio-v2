@@ -10,7 +10,7 @@ import { pageSections } from "./data/pageSections";
 import MyProjects from "./pages/MyProjects/MyProjects";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("Limbitless");
+  const [currentPage, setCurrentPage] = useState("Projects");
   const [activeIndex, setActiveIndex] = useState(0);
 
   const isTocPage = ["Limbitless", "EventKnight", "MyProjects"].includes(

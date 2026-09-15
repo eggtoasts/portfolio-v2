@@ -60,6 +60,7 @@ export default function LimbitlessPage() {
               number="PROJECT 01"
               title="WCAG Compliance"
               description="Making the main website more accessible, and fixing visual bugs."
+              photo="/limbitless-images/Project1/WCAG.png"
             >
               <InfoRow
                 columns={[
@@ -72,13 +73,18 @@ export default function LimbitlessPage() {
               <Paragraph
                 subheader="TASK"
                 header=""
-                arr={["example1"]}
-                images={["LifeIsRoblox.png", "LifeIsRoblox.png"]}
+                arr={[
+                  "Improved the Limbitless main page's accessibility to WCAG AA level by fixing colors, responsiveness bugs, HTML/label structure, and video popups.",
+                ]}
+                images={[
+                  "/limbitless-images/Project1/WCAG1.png",
+                  "/limbitless-images/Project1/WCAG2.png",
+                ]}
               />
               <Paragraph
                 subheader="WHAT I LEARNED"
                 header=""
-                arr={["example1"]}
+                arr={["Web accessibility standards (WCAG AA) and Bootstrap CSS."]}
               />
             </ProjectItem>
           </div>
@@ -88,6 +94,7 @@ export default function LimbitlessPage() {
               number="PROJECT 02"
               title="Our Work page"
               description="Making the main website more accessible, and fixing visual bugs."
+              photo="/limbitless-images/Project3/OurWorks2.mp4"
             >
               <InfoRow
                 columns={[
@@ -97,11 +104,20 @@ export default function LimbitlessPage() {
                   { label: "TIMELINE", values: ["Jan 2026 - Current"] },
                 ]}
               />
-              <Paragraph subheader="TASK" header="" arr={["example1"]} />
+              <Paragraph
+                subheader="TASK"
+                header=""
+                arr={[
+                  "Turned a Figma design by Victoria Tran (a previous Limbitless scholar) into a responsive website for mobile and desktop, including coding her arm animations (my favorite part!).",
+                ]}
+                images={["/limbitless-images/Project3/OurWorks.mp4"]}
+              />
               <Paragraph
                 subheader="WHAT I LEARNED"
                 header=""
-                arr={["example1"]}
+                arr={[
+                  "Designing for responsiveness across 5 main device viewports, and showing/hiding elements between mobile and desktop.",
+                ]}
               />
             </ProjectItem>
           </div>
@@ -111,6 +127,7 @@ export default function LimbitlessPage() {
               number="PROJECT 03"
               title="Arm Socket Upload"
               description="Making the main website more accessible, and fixing visual bugs."
+              photo="/limbitless-images/Project2/SocketUpload.png"
             >
               <InfoRow
                 columns={[
@@ -123,11 +140,19 @@ export default function LimbitlessPage() {
                   { label: "TIMELINE", values: ["Jan 2026 - Current"] },
                 ]}
               />
-              <Paragraph subheader="TASK" header="" arr={["example1"]} />
+              <Paragraph
+                subheader="TASK"
+                header=""
+                arr={[
+                  "Designed and developed a socket upload feature so any team can upload clinical trial patients' socket images to a Google Drive API, organized into folders by trial ID.",
+                ]}
+              />
               <Paragraph
                 subheader="WHAT I LEARNED"
                 header=""
-                arr={["example1"]}
+                arr={[
+                  "Google Drive API, working within an existing design system, and API calls in Flutter.",
+                ]}
               />
             </ProjectItem>
           </div>
@@ -137,6 +162,7 @@ export default function LimbitlessPage() {
               number="PROJECT 04"
               title="Inventory Management"
               description="Making the main website more accessible, and fixing visual bugs."
+              photo="/limbitless-images/Project4/Inventory Tab.png"
             >
               <InfoRow
                 columns={[
@@ -162,11 +188,23 @@ export default function LimbitlessPage() {
                   { label: "TIMELINE", values: ["Jan 2026 - Current"] },
                 ]}
               />
-              <Paragraph subheader="TASK" header="" arr={["example1"]} />
+              <Paragraph
+                subheader="TASK"
+                header=""
+                arr={[
+                  "Designed and developed an inventory website for the Finishing Paint and Manufacturing teams, integrating their Google Sheets data into a cleaner UI using the Google Sheets API.",
+                ]}
+                images={[
+                  "/limbitless-images/Project4/Order Tab Detail for non-requested POV.png",
+                  "/limbitless-images/Project4/Order Tab.png",
+                ]}
+              />
               <Paragraph
                 subheader="WHAT I LEARNED"
                 header=""
-                arr={["example1"]}
+                arr={[
+                  "Cross-team communication and collaboration (worked with designer Sabrina) and the Google Sheets API.",
+                ]}
               />
             </ProjectItem>
           </div>
@@ -176,7 +214,7 @@ export default function LimbitlessPage() {
   );
 }
 
-function ProjectItem({ number, title, description, children }) {
+function ProjectItem({ number, title, description, photo, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -197,7 +235,18 @@ function ProjectItem({ number, title, description, children }) {
           <p className="description">{description}</p>
         </div>
 
-        <img className="project-photo"></img>
+        {photo?.endsWith(".mp4") ? (
+          <video
+            className="project-photo"
+            src={photo}
+            autoPlay
+            muted
+            loop
+            playsInline
+          ></video>
+        ) : (
+          <img className="project-photo" src={photo}></img>
+        )}
       </div>
 
       {/* toggleable content */}

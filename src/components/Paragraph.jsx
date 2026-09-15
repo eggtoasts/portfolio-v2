@@ -36,9 +36,13 @@ export default function Paragraph({
 
         {images && (
           <div className="project-images">
-            {images.map((src, i) => (
-              <img key={i} src={src} alt="" />
-            ))}
+            {images.map((src, i) =>
+              src.endsWith(".mp4") ? (
+                <video key={i} src={src} autoPlay muted loop playsInline />
+              ) : (
+                <img key={i} src={src} alt="" />
+              ),
+            )}
           </div>
         )}
       </div>
