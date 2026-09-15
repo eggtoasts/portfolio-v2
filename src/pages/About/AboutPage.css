@@ -26,6 +26,10 @@
   }
 }
 
+.about-aside {
+  color: var(--text-gray);
+}
+
 .about-me-picture {
   flex: 1 1 320px;
   min-width: 0;
@@ -33,6 +37,7 @@
   flex-direction: column;
   justify-content: center;
   .sub-font {
+    margin-top: 5px;
     font-size: var(--caption-size);
     color: var(--text-gray);
   }
@@ -55,6 +60,7 @@
 /* ==== experience ==== */
 
 .experiences-container {
+  gap: 26px;
   font-family: var(--text-font);
   display: flex;
   flex-direction: column;

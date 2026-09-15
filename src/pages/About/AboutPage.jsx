@@ -13,15 +13,16 @@ export default function AboutPage() {
 
               <div className="about-text">
                 <p className="main-font">
-                  I've loved coding and art ever since I started making (really
-                  bad) Roblox games and silly animations as a kid. Growing up at
-                  the intersection of creativity and code expanded my worldview
-                  and deepened my love for building, learning, and digital
-                  creation.
+                  I've loved coding and art ever since I started making{" "}
+                  <span className="about-aside">(really bad)</span> Roblox games
+                  and silly animations as a kid. Growing up at the intersection
+                  of creativity and code expanded my worldview and deepened my
+                  love for building, learning, and digital creation.
                 </p>
                 <p className="main-font">
                   Outside of tech, I’m into drawing, checking out cafes @ orl,
-                  anime, playing video games (especially Persona), and
+                  anime, playing video games{" "}
+                  <span className="about-aside">(especially Persona)</span>, and
                   photography.
                 </p>
                 <p className="main-font">
@@ -81,7 +82,7 @@ export default function AboutPage() {
               <div className="experience-info">
                 <div className="title-date-row">
                   <p className="title">
-                    Software Engineer & UI/UX Designer Intern
+                    Assistant Scholar - Computer Science Intern
                   </p>
                   <p className="date">May 2026 - Aug 2026</p>
                 </div>
@@ -89,8 +90,33 @@ export default function AboutPage() {
                 <p className="location">Limbitless Solutions | Orlando, FL</p>
 
                 <p className="description">
-                  Designing the company's internal services, as well as
-                  developing the UI.
+                  Designing and developing the company's internal services such
+                  as inventory tracking and arm socket files.
+                </p>
+
+                <div className="experience-pictures"></div>
+              </div>
+            </div>
+
+            <div className="experience-card">
+              <img
+                className="experience-icon"
+                src="/LimbitlessExperience.svg"
+              ></img>
+
+              <div className="experience-info">
+                <div className="title-date-row">
+                  <p className="title">
+                    Assistant Scholar - Web Design & Development Intern
+                  </p>
+                  <p className="date">Jan. 2026 - April 2026</p>
+                </div>
+
+                <p className="location">Limbitless Solutions | Orlando, FL</p>
+
+                <p className="description">
+                  Translated UI/UX designs into responsive layouts. Improved
+                  accessibility to meet WCAG 2.1 guidelines.
                 </p>
 
                 <div className="experience-pictures"></div>

@@ -141,7 +141,16 @@ export default function ProjectPage({ setCurrentPage }) {
             Stuff I’ve built throughout my learning journey..
           </p>
         </div>
-        <div className="project-card">
+        <div
+          className="project-card"
+          onClick={() =>
+            window.open(
+              "https://www.figma.com/design/1gbfooI4DuoTkBs9sjzxHH/Untitled?node-id=249-2270&t=hoWnv1EDU2Q1rzZq-1",
+              "_blank",
+              "noopener,noreferrer",
+            )
+          }
+        >
           <img
             className="project1"
             src="/project-thumbnails/PortfolioThumbnail.png"
