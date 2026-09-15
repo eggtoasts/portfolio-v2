@@ -91,21 +91,31 @@ export default function Sidebar({
               <p className="sub-font">SOCIALS</p>
 
               <div className="socials-row">
-                <div className="social">
+                <a
+                  className="social"
+                  href="https://www.linkedin.com/in/samanthaamaro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <p className="sub-font">LINKEDIN</p>
                   <img
                     src="/ix_arrow-diagonal-bottom-left.svg"
                     alt="left arrow"
                   />
-                </div>
+                </a>
 
-                <div className="social">
+                <a
+                  className="social"
+                  href="https://github.com/eggtoasts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <p className="sub-font">GITHUB</p>
                   <img
                     src="/ix_arrow-diagonal-bottom-left.svg"
                     alt="left arrow"
                   />
-                </div>
+                </a>
               </div>
             </div>
           </>

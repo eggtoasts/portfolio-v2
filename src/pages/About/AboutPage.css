@@ -43,6 +43,10 @@
   display: flex;
   gap: 14px;
 
+  a {
+    display: flex;
+  }
+
   img {
     height: 25px;
   }

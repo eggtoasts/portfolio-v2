@@ -31,9 +31,25 @@ export default function AboutPage() {
               </div>
 
               <div className="about-socials">
-                <img src="/about-me-icons/github.svg"></img>
-                <img src="/about-me-icons/linkedin.svg"></img>
-                <img src="/about-me-icons/email.svg"></img>
+                <a
+                  href="https://github.com/eggtoasts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <img src="/about-me-icons/github.svg"></img>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/samanthaamaro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <img src="/about-me-icons/linkedin.svg"></img>
+                </a>
+                <a href="mailto:yuihimari222@gmail.com" aria-label="Email">
+                  <img src="/about-me-icons/email.svg"></img>
+                </a>
               </div>
             </div>
 

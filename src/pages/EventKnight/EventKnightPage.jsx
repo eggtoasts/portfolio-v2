@@ -82,7 +82,8 @@ export default function EventKnightPage() {
           <p className="sub-part-text text-font">
             To understand why campus engagement drops despite hundreds of active
             RSOs, I focused on mapping how students currently find and attend
-            events.
+            events. Through user feedback and observing how people navigated
+            existing channels, three clear priorities guided the design:
           </p>
           <img
             className="section-image"
@@ -116,8 +117,6 @@ export default function EventKnightPage() {
           <p className="sub-part-text text-font">
             We looked closely at how students currently find campus events and
             talked directly with users across different levels of involvement.
-            Through user feedback and observing how people navigated existing
-            channels, three clear priorities guided the design:
           </p>
           <img
             className="section-image contained"

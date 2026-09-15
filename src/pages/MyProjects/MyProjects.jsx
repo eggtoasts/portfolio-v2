@@ -9,7 +9,7 @@ const projects = [
     description:
       "Aims to help individuals that struggle to cope with difficult feelings.",
     image: "/my-projects-images/MoodHacker.png",
-    url: "#",
+    url: "https://github.com/girlswhocodeUCF/Mood-Hacker",
   },
   {
     id: "project-02",
@@ -18,7 +18,7 @@ const projects = [
     description:
       "Wanted to practice DOM manipulation so I built a drawing app.",
     image: "/my-projects-images/EtchASketch.png",
-    url: "#",
+    url: "https://eggtoasts.github.io/Etch-a-Sketch/",
   },
   {
     id: "project-03",
@@ -26,7 +26,7 @@ const projects = [
     title: "Calculator",
     description: "A simple calculator inspired by Apple's own UI.",
     image: "/my-projects-images/Calculator.png",
-    url: "#",
+    url: "https://eggtoasts.github.io/calculator/",
   },
   {
     id: "project-04",
@@ -34,7 +34,7 @@ const projects = [
     title: "Todo-list",
     description: "Todo-list built entirely with vanilla JS.",
     image: "/my-projects-images/to-do.png",
-    url: "#",
+    url: "https://github.com/eggtoasts/todo-list",
   },
   {
     id: "project-05",
@@ -42,15 +42,15 @@ const projects = [
     title: "Weather App",
     description: "Visualization app using VisualCrossing's Weather API.",
     image: "/my-projects-images/weather-app.png",
-    url: "#",
+    url: "https://eggtoasts.github.io/weather-app/",
   },
   {
     id: "project-06",
     number: "PROJECT 06",
     title: "Manga Tracker",
-    description: "Full Stack manga racker, inspired by MyAnimeList (MAL).",
+    description: "Full Stack manga tracker, inspired by MyAnimeList (MAL).",
     image: "/my-projects-images/manga-list.png",
-    url: "#",
+    url: "https://github.com/eggtoasts/Manga-Tracker",
   },
   {
     id: "project-07",
@@ -59,7 +59,7 @@ const projects = [
     description:
       "A web + mobile platform designed for discovering and managing UCF campus events.",
     image: "/my-projects-images/EventKnightThumbnail.png",
-    url: "#",
+    url: "https://github.com/DanielJEfres/large-project",
   },
   {
     id: "project-08",
@@ -67,7 +67,7 @@ const projects = [
     title: "CookQuest",
     description: " AI-powered kitchen companion for the Meta Quest.",
     image: "/my-projects-images/CookQuest.gif",
-    url: "#",
+    url: "https://devpost.com/software/cookquest",
   },
 ];
 
