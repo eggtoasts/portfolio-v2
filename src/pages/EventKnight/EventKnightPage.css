@@ -33,6 +33,15 @@
   margin-top: 8px;
 }
 
+.eventknight .caption-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.eventknight .caption-link-here {
+  text-decoration: underline;
+}
+
 /* section images for resizing*/
 .eventknight .section-image {
   width: 100%;

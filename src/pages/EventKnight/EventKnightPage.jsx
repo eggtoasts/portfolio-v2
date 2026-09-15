@@ -21,9 +21,9 @@ export default function EventKnightPage() {
             {
               label: "ROLE",
               values: [
-                "Product Designer",
+                "UI/UX Designer",
                 "Frontend Engineer Lead",
-                "Backend Team Member",
+                "Backend Engineer",
               ],
             },
             {
@@ -37,7 +37,7 @@ export default function EventKnightPage() {
             },
             {
               label: "TEAM",
-              values: ["1 PM", "1 Designer (me)", "6 Engineers (also me!)"],
+              values: ["1 PM", "1 Designer (me)", "8 Engineers (also me!)"],
             },
             {
               label: "TIMELINE",
@@ -257,7 +257,15 @@ export default function EventKnightPage() {
             />
           </div>
           <p className="sub-part-caption sub-font">
-            Link to Low-Fi Wireframes here.
+            <a
+              className="caption-link"
+              href="https://www.figma.com/design/91TwL4EOjliDy816fbLyBm/low-fid-wireframes?node-id=1-945&t=03dObptY2lPTX6Fr-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Link to Low-Fi Wireframes{" "}
+              <span className="caption-link-here">here</span>.
+            </a>
           </p>
 
           {/*  sub-part High-Fi --- */}
@@ -269,7 +277,15 @@ export default function EventKnightPage() {
             officers a clear management dashboard.
           </p>
           <p className="sub-part-caption sub-font">
-            Link to High-Fi Wireframes here.
+            <a
+              className="caption-link"
+              href="https://www.figma.com/design/rb4VYkGWg14pYR8797Psy8/EventKnight?node-id=309-480&t=w6mlcmHZmAEfatn1-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Link to High-Fi Wireframes{" "}
+              <span className="caption-link-here">here</span>.
+            </a>
           </p>
 
           {/* --- sub-part: Branding --- */}
@@ -317,10 +333,10 @@ export default function EventKnightPage() {
           </p>
           <p className="sub-part-text text-font">
             The core backend architecture, Mongoose data models, and RESTful
-            endpoints were entirely engineered by Adam, David, Sophia, and Amy.
-            Additionally, Sophia and Alesandra did the entirety of the Flutter
-            mobile application. My focus was seamlessly integrating the web
-            client with their Node/Express API, ensuring the frontend state
+            endpoints were entirely engineered by Adam, David, Sophia, Harmony,
+            and Amy. Additionally, Sophia and Alesandra did the entirety of the
+            Flutter mobile application. My focus was seamlessly integrating the
+            web client with their Node/Express API, ensuring the frontend state
             correctly handled the payloads they delivered.
           </p>
         </section>
