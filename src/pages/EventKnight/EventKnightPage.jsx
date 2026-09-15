@@ -13,7 +13,7 @@ export default function EventKnightPage() {
       />
 
       <div className="page eventknight">
-        <p className="sub-font">CASE STUDY / PROJECT</p>
+        <p className="sub-font">PROJECT</p>
         <h1 className="main-font main-title">EventKnight</h1>
 
         <InfoRow
